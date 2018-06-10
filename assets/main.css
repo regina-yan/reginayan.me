@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Nexa_Free_Bold';
+    src: url("assets/Nexa_Free_Bold-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: Sunflower, sans-serif;
+	font-weight: 300;
+}
+.container{
+	width: 85%;
+	margin: 0 auto;
+}
+
+
+
+
+
+/*header, p{
+	font-family: Sunflower, sans-serif;
+	font-weight: 300;
+}*/
+
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo a {
+	float: left;
+	padding: 10px 0;
+	text-decoration: none;
+	font-family: 'Nexa_Free_Bold';
+	font-style: normal;
+	color: pink;
+}
+nav {
+	float: right;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 12px;
+	padding-top: 25px;
+
+	position: relative;
+}
+nav li a{
+	color: pink;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.unselected {
+	color: grey;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 1.5px solid transparent;
+	transition: border-bottom-color 250ms;
+}
+
+.unselected:hover{
+	color: black;
+	border-bottom-color: black;
+}
+
+.container_intro{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 200px;
+}
+
+.container_list{
+	float: none;
+	text-align: center;
+}
+
+.container_list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	float: none;
+}
+
+li{
+	float: left;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 12px;
+}
+li a{
+	color: pink;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#debono, #rollercoaster, #reframe, #productdesign, #digdreams, #impdart{
+	width: 85%;
+	margin: 0 auto;
+	font-size: 25px;
+	padding-top: 100px;
+	text-transform: uppercase;
+}
+.project_desc{
+	width: 85%;
+	margin: 0 auto;
+}
+
+
