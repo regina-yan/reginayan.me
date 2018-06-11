@@ -6,7 +6,7 @@
 
 }
 
-body{
+body, h2{
 	font-family: Sunflower, sans-serif;
 	font-weight: 300;
 }
@@ -14,15 +14,32 @@ body{
 	width: 85%;
 	margin: 0 auto;
 }
+.container_home{
+	margin: 0 auto;
+	background-color: #EF5B7D;
+	height: 300px;
+	text-align:	center;
+	line-height: 20px;
+	padding-top: 150px;
+}
+.container_about{
+	width: 50%;
+	margin: 0 auto;
+	height: 100px;
+	text-align:	center;
+}
+.container_aboutCourses{
+	text-align: left;
+}
+
+h1{
+	color: white;
+	font-size: 60px;
+}
 
 
-
-
-
-/*header, p{
-	font-family: Sunflower, sans-serif;
-	font-weight: 300;
-}*/
+header{
+}
 
 header::after{
 	content: '';
@@ -30,13 +47,8 @@ header::after{
 	clear: both;
 }
 
-.logo a {
+.logo {
 	float: left;
-	padding: 10px 0;
-	text-decoration: none;
-	font-family: 'Nexa_Free_Bold';
-	font-style: normal;
-	color: pink;
 }
 nav {
 	float: right;
@@ -44,19 +56,19 @@ nav {
 
 nav ul{
 	margin: 0;
-	padding: 0;
+	padding-top: 60px;
 	list-style: none;
 }
 
 nav li {
 	display: inline-block;
 	margin-left: 12px;
-	padding-top: 25px;
+	padding-top: 0px;
 
 	position: relative;
 }
 nav li a{
-	color: pink;
+	color: #EF5B7D;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -99,11 +111,15 @@ li{
 	padding-top: 12px;
 }
 li a{
-	color: pink;
+	color: #EF5B7D;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
+.courses{
+	float: none;
+	font-size: 14px;
+}
 #debono, #rollercoaster, #reframe, #productdesign, #digdreams, #impdart{
 	width: 85%;
 	margin: 0 auto;
@@ -116,4 +132,30 @@ li a{
 	margin: 0 auto;
 }
 
+.interviews{
+	padding-left: 50px;
+	margin: 0 auto;
+}
 
+.container_video{
+	text-align: center;
+}
+
+.container_featuredProjects{
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.container_featuredProjects img{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+footer{
+	position: relative;
+	text-align: center;
+	color: #EF5B7D;
+}
