@@ -163,7 +163,10 @@ footer{
 
 
 
-
+.tile:hover{
+	opacity: 0.6;
+	transition: 0.3s;
+}
 
 
 
@@ -193,6 +196,7 @@ footer{
     font-family: Sunflower, sans-serif;
     text-transform: uppercase;
     color: #EF5B7D;
+    font-size: 14px;
 }
 
 /* Change background color of buttons on hover */
