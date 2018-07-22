@@ -21,5 +21,4 @@ function openProj(evt, project) {
     evt.currentTarget.className += " active";
 }
 
-
 document.getElementById("defaultTab").click();
