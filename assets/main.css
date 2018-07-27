@@ -321,13 +321,14 @@ footer{
 .proj_img {
 	width: 85%;
 	margin: 0 auto;
+	position: relative;
 	display: inline-block;
 	text-align: center;
 	float: none;
 }
 
 .box_content {
-	width: 90%;
+	width: 60%;
 	margin: 0 auto;
 }
 .text_content{
