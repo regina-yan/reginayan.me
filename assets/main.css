@@ -10,10 +10,24 @@ body, h2{
 	font-family: Sunflower, sans-serif;
 	font-weight: 300;
 }
+.head{
+	overflow: hidden;
+    background-color: white;
+    position: fixed; 
+    left: 0;
+    top: 0; 
+    width: 100%;
+    box-shadow: 0 1px 30px rgba(36, 53, 53, 0.25);
+    z-index: 1;
+}
+.top_padding{
+	padding-top: 100px;">
+}
 .container{
 	width: 85%;
 	margin: 0 auto;
 }
+
 .container_home{
 	margin: 0 auto;
 	background-color: #25BFBF;
@@ -24,11 +38,18 @@ body, h2{
 	padding-top: 25px;
 	padding-bottom: 75px;
 }
+
 .home_intro{
 	margin: 0 auto;
 	position: relative;
+	padding-top: 75px;
 	width: 50%;
 	text-align: left;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
 .container_about{
@@ -185,10 +206,11 @@ nav li a{
 
 
 .container_intro{
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 50px;
 	text-align: center;
+	background-color: white;
 }
 
 .container_list{
@@ -330,6 +352,7 @@ footer{
 .box_content {
 	width: 60%;
 	margin: 0 auto;
+	padding-top: 50px;
 }
 .text_content{
 	width: 85%;
@@ -346,3 +369,45 @@ footer{
 	color: #25BFBF;
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.parallax{
+	background-image: url('blue-01.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 300px;
+}
+
+.parallax_top{
+	background-color: white;
+	height: 1300px;
+}
