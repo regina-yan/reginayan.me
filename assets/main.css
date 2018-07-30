@@ -81,8 +81,14 @@ header::after{
 }
 
 .logo {
-	float: left;
-	opacity: 0.85;
+	height:39.2px; 
+	width:210px;
+	transition: all .2s ease-in-out;
+}
+
+.logo:hover{
+	transform: scale(1.05);
+
 }
 nav {
 	float: right;
