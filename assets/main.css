@@ -30,7 +30,7 @@ body, h2{
 
 .container_home{
 	margin: 0 auto;
-	background-color: #25BFBF;
+	background: linear-gradient(rgba(37, 191, 191, 1), rgba(13, 165, 181, 1));
 	height: 300px;
 	text-align: center;
 	vertical-align: middle;
