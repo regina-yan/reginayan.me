@@ -1,13 +1,5 @@
-@font-face {
-    font-family: 'Nexa_Free_Bold';
-    src: url("assets/Nexa_Free_Bold-webfont.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body, h2{
-	font-family: Sunflower, sans-serif;
+	font-family: Roboto, sans-serif;
 	font-weight: 300;
 }
 .head{
@@ -30,13 +22,18 @@ body, h2{
 
 .container_home{
 	margin: 0 auto;
-	background: linear-gradient(rgba(37, 191, 191, 1), rgba(13, 165, 181, 1));
-	height: 300px;
+	background-image: url("heroshot.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 500px;
+	max-width: 100%;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 20px;
-	padding-top: 25px;
-	padding-bottom: 75px;
+	padding-top: 125px;
+	/*padding-bottom: 75px;*/
 }
 
 .home_intro{
@@ -68,12 +65,16 @@ body, h2{
 	margin-left: auto;
 }
 h1{
-	color: white;
-	font-size: 80px;
+	font-family: Yeseva One;
+	font-size: 48px;
 }
 h2{
-	color: #123F49;
-	font-size: 18px;
+	font-family: Yeseva One;
+	font-size: 24px;
+}
+h3{
+	font-family: Roboto;
+	font-weight: 300;
 }
 
 header{
@@ -86,8 +87,10 @@ header::after{
 }
 
 .logo {
-	height:39.2px; 
-	width:210px;
+	/*height:39.2px; */
+	/*width:210px;*/
+	height: 50px; 
+	width: 200px; 
 	transition: all .2s ease-in-out;
 }
 
