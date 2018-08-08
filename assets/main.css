@@ -1,6 +1,10 @@
-body, h2{
-	font-family: Roboto, sans-serif;
+body{
+	font-family: Sunflower, sans-serif;
 	font-weight: 300;
+	color: #5C5C5C;
+}
+b{
+	color: black;
 }
 .head{
 	overflow: hidden;
@@ -36,6 +40,7 @@ body, h2{
 	/*padding-bottom: 75px;*/
 }
 
+
 .home_intro{
 	margin: 0 auto;
 	position: relative;
@@ -47,6 +52,25 @@ body, h2{
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+	.container_home{
+		margin: 0 auto;
+		background-image: url("heroshot.jpg");
+		background-attachment: fixed;
+	    background-position: 90% 0%;
+	    background-repeat: no-repeat;
+		height: 500px;
+		max-width: 100%;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 20px;
+		padding-top: 125px;
+	}
+	.home_intro{
+		padding-top: 125px;
+	}	
 }
 
 .container_about{
@@ -67,13 +91,15 @@ body, h2{
 h1{
 	font-family: Yeseva One;
 	font-size: 48px;
+	color: black;
 }
 h2{
 	font-family: Yeseva One;
 	font-size: 24px;
+	color: black;
 }
 h3{
-	font-family: Roboto;
+	font-family: Sunflower;
 	font-weight: 300;
 }
 
@@ -331,7 +357,7 @@ footer{
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-family: Roboto, sans-serif;
+    font-family: Sunflower, sans-serif;
     text-transform: uppercase;
     color: #25BFBF;
     font-size: 14px;
