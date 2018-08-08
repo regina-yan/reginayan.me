@@ -1,8 +1,10 @@
 body{
 	font-family: Sunflower, sans-serif;
 	font-weight: 300;
+	font-style: light;
 	color: #5C5C5C;
 }
+
 b{
 	color: black;
 }
@@ -28,9 +30,9 @@ b{
 	margin: 0 auto;
 	background-image: url("heroshot.jpg");
 	background-attachment: fixed;
-    background-position: center;
+    background-position: 90% 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
 	height: 500px;
 	max-width: 100%;
 	text-align: center;
@@ -54,7 +56,7 @@ b{
             animation: fadein 2s;
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+/*@media (min-width: 481px) and (max-width: 767px){
 	.container_home{
 		margin: 0 auto;
 		background-image: url("heroshot.jpg");
@@ -71,7 +73,7 @@ b{
 	.home_intro{
 		padding-top: 125px;
 	}	
-}
+}*/
 
 .container_about{
 	width: 50%;
