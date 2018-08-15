@@ -33,9 +33,9 @@ b{
 	background-attachment: fixed;
     background-position: 90% 0;
     background-repeat: no-repeat;
-    /*background-size: cover;*/
+    background-size: 100%;
 	height: 500px;
-	max-width: 100%;
+	width: span;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 20px;
