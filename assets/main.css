@@ -9,6 +9,25 @@ body{
 b{
 	color: black;
 }
+
+h1{
+	font-family: Yeseva One;
+	font-size: 48px;
+	/*font-size: 6vw;*/
+	color: black;
+}
+h2{
+	font-family: Yeseva One;
+	font-size: 24px;
+	color: black;
+}
+h3{
+	font-family: Sunflower;
+	font-weight: 300;
+	font-size: 14pt;
+	/*font-size: 2vw;*/
+}
+
 .head{
 	overflow: hidden;
     background-color: white;
@@ -33,14 +52,29 @@ b{
 	background-attachment: fixed;
     background-position: 90% 0;
     background-repeat: no-repeat;
-    background-size: 100%;
+    /*background-size: 100%;*/
 	height: 500px;
-	width: span;
+	max-width: 100%;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 20px;
+	/*line-height: 25px;*/
 	padding-top: 125px;
 	/*padding-bottom: 75px;*/
+}
+
+@media only screen and (min-width: 1200px) {
+	.container_home{
+		background-size: 100%;
+		height: 50vw;
+		padding-top: 10vw;
+	}
+	h3{
+		font-size: none;
+		font-size: 1.5vw;
+	}
+	h1{
+		font-size: 4vw;
+	}
 }
 
 
@@ -57,24 +91,6 @@ b{
             animation: fadein 2s;
 }
 
-/*@media (min-width: 481px) and (max-width: 767px){
-	.container_home{
-		margin: 0 auto;
-		background-image: url("heroshot.jpg");
-		background-attachment: fixed;
-	    background-position: 90% 0%;
-	    background-repeat: no-repeat;
-		height: 500px;
-		max-width: 100%;
-		text-align: center;
-		vertical-align: middle;
-		line-height: 20px;
-		padding-top: 125px;
-	}
-	.home_intro{
-		padding-top: 125px;
-	}	
-}*/
 
 .container_about{
 	width: 50%;
@@ -91,20 +107,7 @@ b{
 	margin-right: auto;
 	margin-left: auto;
 }
-h1{
-	font-family: Yeseva One;
-	font-size: 48px;
-	color: black;
-}
-h2{
-	font-family: Yeseva One;
-	font-size: 24px;
-	color: black;
-}
-h3{
-	font-family: Sunflower;
-	font-weight: 300;
-}
+
 
 header{
 }
@@ -181,7 +184,7 @@ mark {
 
 
 .hide{
-	visibility: hidden;
+	display: none;
 }
 
 .topnav {
@@ -198,6 +201,7 @@ mark {
 	text-transform: uppercase;
 	border-bottom: 1.5px solid transparent;
 	transition: border-bottom-color 250ms;
+	margin-right: 2vw;
 }
 
 .topnav a:(not icon) hover {
@@ -262,7 +266,7 @@ mark {
   }
   .topnav.responsive a {
   	position: relative;
-  	padding-top: 10px;
+  	padding-bottom: 20px;
     float: none;
     display: block;
     text-align: left;
@@ -531,16 +535,3 @@ footer{
     to   { opacity: 1; }
 }
 
-.parallax{
-	background-image: url('blue-01.png');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 300px;
-}
-
-.parallax_top{
-	background-color: white;
-	height: 1300px;
-}
