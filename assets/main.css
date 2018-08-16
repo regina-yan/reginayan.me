@@ -201,7 +201,7 @@ mark {
 	text-transform: uppercase;
 	border-bottom: 1.5px solid transparent;
 	transition: border-bottom-color 250ms;
-	margin-right: 2vw;
+	margin-right: 15px;
 }
 
 .topnav a:(not icon) hover {
