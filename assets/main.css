@@ -465,6 +465,11 @@ footer{
 	vertical-align: middle;
 	float: none;
 }
+.proj_news{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
 
 .box_content {
 	width: 60%;
