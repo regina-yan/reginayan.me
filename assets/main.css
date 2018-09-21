@@ -128,7 +128,15 @@ header::after{
 
 .logo:hover{
 	transform: scale(1.05);
+}
 
+.socialmedia{
+	width: 40px;
+	transition: all .2s ease-in-out;
+	padding-right: 10px;
+}
+.socialmedia:hover{
+	transform: scale(1.15);
 }
 nav {
 	float: right;
@@ -220,10 +228,11 @@ mark {
 	display: none;
 }
 
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2) { 
   .topnav a {
   	display: none;}
   .topnav a.icon {
@@ -233,25 +242,6 @@ mark {
   .topnav a.icon:hover{
   	color: #25BFBF;
   }
-}
-
-@media screen and (max-width: 900px){ 
-	.topnav a {
-  	display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav a.icon:hover{
-  	color: #25BFBF;
-  }
-}
-
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
   .topnav.responsive {
   	position: relative;
   	float: none;
@@ -260,9 +250,6 @@ mark {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .topnav.responsive a.hide {
-    display: none;
   }
   .topnav.responsive a {
   	position: relative;
@@ -275,6 +262,15 @@ mark {
 }
 
 @media screen and (max-width: 900px){
+	.topnav a {
+  	display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav a.icon:hover{
+  	color: #25BFBF;
+  }
 	.topnav.responsive {
   	position: relative;
   	float: none;
@@ -283,9 +279,6 @@ mark {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .topnav.responsive a.hide {
-    display: none;
   }
   .topnav.responsive a {
   	position: relative;
