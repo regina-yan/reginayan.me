@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | Miscellaneous | The Belay Belt</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Sunflower:300|Yeseva+One" rel="stylesheet">
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="head">
+	<div style="padding-top: 35px;"></div>
+	<header class="container">
+		<a href="../index.html"><img class="logo" src="../assets/reginaLogo.png" alt="Regina Yan"></a>
+		<div class="topnav" id="myTopnav">
+			<a href="../uiux.html" class="unselected">UI/UX</a>
+			<a href="../illustration.html" class="unselected">Illustration</a>
+			<a href="../branding.html" class="unselected">Branding</a>
+			<a href="../misc.html" class="active">Miscellaneous</a>
+			<a href="../about.html" class="unselected">About</a>
+			<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+		</div>
+	</header>
+</div>
+
+<div class="top_padding"></div>
+<div class="content">
+<div class="box_content">
+		<h1>Lily Model</h1>
+		<div class="proj_img">
+			<img src="../assets/projecttile-37.png" style= "width:60%;">
+		</div>
+
+		<p>
+		In the sport of rock climbing, improper belay technique resulting from the belayer standing too far from the wall is a main source of accidents and injuries from lead climbing. This project aimed to correct human errors in lead belaying. The resulting product was the Belay Belt, a device that successfully measured the belayer’s distance from the wall and alerted the belayer when he or she exceeded a safe distance threshold. I worked on this device for my Engineering 86: Independent Project class over the course of 10 weeks in Winter 2019. 
+ 
+		</p>
+		<h2>Final Prototype Video demonstration</h2>
+		<div class="container_video">
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/hSWupMssqQU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<p>
+		The final write-up can be found <a href="stressball.html" class="link">here</a>. 
+		</p>
+		
+		<h2>Introduction</h2>
+		<p>With the recently announced addition of sport climbing to the Olympics, the climbing world has skyrocketed in popularity the past few years. Lead climbing is a discipline of climbing that involves a “lead climber” and “lead belayer”. The lead climber is climbing up with the rope, clipping into bolts along the way. The lead belayer is on the ground managing the rope by feeding or taking in “slack” (extra rope) to the climber and is responsible for ensuring the climber does not “deck” (hit the ground when falling). Lead climbing is the most popular form of rock climbing and the Dartmouth Mountaineering Club’s main focus in indoor and outdoor climbing. 
+		</p>
+
+		<br>
+		<br>
+
+		<h2>Research</h2>	
+		<div class="proj_img">
+			<img src="../assets/modeling1.png" style= "width:30%;">
+			<img src="../assets/modeling2.png" style= "width:30%;">
+			<img src="../assets/modeling3.png" style= "width:30%;">
+		</div>
+
+		<br>
+		<br>
+
+		<h2>Design Process</h2>	
+		<h2>Prototype 1: Cardboard Prototype</h2>
+		<p>
+			The initial looks-like prototype was a cardboard prototype. The prototype included a foamcore rendition of a distance sensor for measuring distance away from wall, a buzzer that would activate when a belayer stepped out of range, and an LCD screen to display current distance status. The belayer would clip the device to the front of his or her harness.
+		</p>
+		<p>Experience Testing</p>
+		<p>
+			The cardboard prototype allowed for experience testing to see what having a clip-on device would feel like. The purpose of the experience testing was to gain initial feedback and findings to help guide further iterations and works-like prototypes. 
+		</p>
+		<div class="proj_img">
+			<img src="../assets/texturing1.png" style= "width:55%;">
+			<img src="../assets/texturing2.png" style= "width:20%;">
+		</div>
+		<p>
+			The experience test was conducted in Dartmouth’s Jonathan Belden Daniels ’86 Memorial Climbing Gym with four participants. Each participant performed one round of lead belaying without knowledge of the device. After this first round, the belayers were informed of the dangers of standing too far away from the wall and equipped with the cardboard prototype. They were instructed to belay the climber again, however this time whenever they stepped outside of the safe distance threshold of 6 feet, I would make a verbal "bzz" sound. 
+		</p>
+		<p>Findings</p>
+		<p>
+			Each participant stood closer to the wall on the second trial which indicated potential for a successful product in this direction. Participants also noted that the device did not impede on their ability to belay or obstruct any movement. However, several problems were noted that provided areas for improvement.
+		</p>
+		<p><mark>Finding 1: Account for Belayer Rotation movement</mark></p>
+		<div class="proj_img">
+			<img src="../assets/texturing1.png" style= "width:55%;">
+			<img src="../assets/texturing2.png" style= "width:20%;">
+		</div>
+		<p>
+			The first and most important finding was accounting for an individual’s rotation movement while belaying. As seen above, belayers would often move and rotate around in 3D space, resulting in what would be incorrect readings from a clip-on device. The device’s one sensor would only measure distance in one direction, which would be directly in front of the belayer. This would result in an issue if the belayer were to rotate, and the sensor would record a much higher reading than the belayer’s actual distance from the wall. To account for this problem, three sensors spaces along a belt were used in the next iteration, with the smallest distance being used for the actual reading.  
+		</p>
+		<p><mark>Finding 2: Different Safe Distance Threshold for Different Belayer-Climber Weight Ratios
+		</mark></p>
+		<p>
+			Light belayers generally need to stand closer to the wall while belaying than heaver belayers because less falling force from the climber is needed to pull them up or into the wall. Feedback from the experience test showed that belayers, especially in the case when a female belayer was paired with a male climber (leading to a lower belayer-climber weight ratio) would find a device that accounted for weight difference in the safety threshold useful. While the possibility of having an input screen upon turning on the device was explored, that alternative was not used because of the complexity in learning how to use the device as well as the time needed to fully equip the device and begin climbing. Instead, a mode button was introduced that would toggle between a “standard mode” 
+		</p>
+		<div class="proj_img">
+			<img src="../assets/texturing1.png" style= "width:55%;">
+			<img src="../assets/texturing2.png" style= "width:20%;">
+		</div>
+		<p><mark>Finding 3: Incorporation of Audio Sound</mark></p>
+		<p>
+			In the cardboard prototype, a “buzzing” sound was made to indicate the belayer should move closer to the wall. Feedback showed that individuals did not like the buzzing, noting that it sounded too much like a phone vibration or could be potentially uncomfortable if actually implemented. A new audio sound was implemented with a piezo buzzer and mode button, with different musical tones playing for different scenarios: switching to “standard mode”, switching to “light mode”, and “exceeding safe distance threshold”. 
+		</p>
+		<div class="proj_img">
+			<img src="../assets/texturing1.png" style= "width:55%;">
+			<img src="../assets/texturing2.png" style= "width:20%;">
+		</div>
+
+
+		<h2>Prototype 2: Foamcore Prototype</h2>
+		<div class="proj_img">
+			<img src="../assets/texturing1.png" style= "width:55%;">
+			<img src="../assets/texturing2.png" style= "width:20%;">
+		</div>
+		<p>
+			The next iteration was a foamcore prototype with electronics components that incorporated the changes from the feedback in Iteration 1. The prototype uses an Arduino Uno along with three HC-SR04 Ultrasonic Distance Sensors. It also incorporates a mode button, piezo buzzer, and volume adjuster (potentiometer). The prototype was built on a foamcore strip to mimic a belt, rather than the clip-on device in Iteration 1.
+		</p>
+		<p>
+			Testing for this prototype involved ensuring that the correct distance sensor reading was being used as the measuring distance for the safe threshold. 
+		</p>
+
+		<h2>Prototype 3: Belay Belt</h2>
+		<div class="proj_img">
+			<img src="../assets/texturing1.png" style= "width:55%;">
+			<img src="../assets/texturing2.png" style= "width:20%;">
+		</div>
+		<p>
+			The third iteration combined works-like aspects of Iteration 2 with a looks-like feel to be used for testing. Figure 8 shows the Belay Belt with additional changes from Iteration 2. 
+		</p>
+		<p>
+			The Velcro seams allow for the inside core of the belt to be removed if needed, which allowed for flexibility in making alterations to the electronics. A removable, rechargeable USB battery was added for convenience, and the belt features a buckle and adjustable straps to fit varying waist sizes. The electronics components, shown in Figure 9, show improvement from the previous iteration. The smaller Arduino Nano replaced the previous Uno, and the sensors were turned in a vertical fashion to allow for more bend in the belt. The buzzer, potentiometer, button, and Nano were eventually soldered on to breadboards to increase strength after finalizing the prototype
+		</p>
+		
+		<br>
+		<br>
+
+		<h2>Testing and Analysis</h2>	
+		<div class="proj_img">
+			<img src="../assets/rigging1.png" style= "width:23%;">
+			<img src="../assets/rigging2.png" style= "width:30%;">
+			<img src="../assets/rigging3.png" style= "width:35%;">
+<!-- 			**/ maybe put in specs/results chart**/ -->
+		</div>
+		<p>
+			Testing of the final prototype, the Belay Belt, was conducted at Evo Rock Gym in Concord, New Hampshire. A video of testing can be found <a href="https://www.thedish.us" class="link">here.</a>
+		</p>
+		<p>
+			The most important specification was reducing belayer distance from the wall. To test this specification, eight individuals ranging from Dartmouth climbers to climbing community members performed one round of lead belaying without the Belt and one round with the Belt (in “standard mode”). Their average distance away from the wall was calculated from measuring their distance every five seconds with distance markers. Each individual reduced his or her average distance from the wall with the Belt, with all of them being within the safety threshold when equipped with the Belt, but only half being within the safety threshold without the belt. Full specifications and testing can be found in my <a href="https://www.thedish.us" class="link">report</a>.
+		</p>
+		
+		<br>
+		<br>
+
+		<h2>Next Steps</h2>
+		<p>dfdf
+
+		</p>
+		<br>
+		<br>
+
+	</div>
+</div>
+<div class="proj_nav_background">
+	<div class="proj_nav_content">
+		<div class="proj_nav">
+		<h2>More Miscellaneous Projects</h2>
+			<a href="stressball.html"><img class="tile_small" src="../assets/projecttile-13.png"></a>
+			<a href="superfb.html"><img class="tile_small" src="../assets/projecttile-35.png"></a>
+			<a href="lily.html"><img class="tile_small" src="../assets/projecttile-37.png"></a>
+			<a href="engs33.html"><img class="tile_small" src="../assets/projecttile-53.png"></a>
+			<a href="lapdesk.html"><img class="tile_small" src="../assets/projecttile-54.png"></a>
+			<a href="diner.html"><img class="tile_small" src="../assets/projecttile-38.png"></a>
+		</div>
+	</div>
+</div>
+	<footer>
+	&copy; Regina Yan
+	</footer>
+
+</body>
+<script type="text/javascript">
+	function clickNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</html>
