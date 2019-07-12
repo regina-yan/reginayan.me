@@ -465,6 +465,9 @@ footer{
 	vertical-align: middle;
 	float: none;
 }
+.img{
+	width: 100%;
+}
 .proj_news{
 	display: flex;
 	flex-direction: row;
