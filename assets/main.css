@@ -374,7 +374,43 @@ li a{
 	padding-top: 40px;
 	text-align: center;
 }
-
+.container_projectTiles{
+	width: 85vw;
+	margin: 0 auto;
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+}
+.dispProj{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+	position: relative;
+	text-align: center;
+}
+.tag{
+	background: white;
+	border: 2px solid white;
+	border-radius: 5%;
+	padding: 0 1% 0 1%;
+	position: absolute;
+	bottom: 5%;
+	right: 4%;
+}
+.multitag{
+	display: flex;
+	position: absolute;
+	bottom: 5%;
+	right: 4%;
+}
+.singletag{
+	background: white;
+	border: 3px solid white;
+	border-radius: 5%;
+	padding: 0 1% 0 1%;
+	margin-left: 10px;
+}
 .container_featuredProjects img{
 	margin-left: 15px;
 	margin-right: 15px;
