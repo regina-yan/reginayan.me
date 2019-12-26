@@ -548,7 +548,18 @@ footer{
 	font-size: 20px;
 	color: #25BFBF;
 }
-
+.dev_box{
+}
+.dev_bullets{
+	padding-left: 10%;
+}
+.dev_bullets p{
+	margin: 0 auto;
+	color: grey;
+}
+.dev_text p{
+	margin: 0 auto;
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
