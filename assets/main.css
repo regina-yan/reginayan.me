@@ -93,13 +93,15 @@ h3{
 
 
 .container_about{
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 	height: 100px;
 	text-align:	center;
 }
 .container_aboutCourses{
 	text-align: left;
+	display: flex;
+	flex-direction: row;
 }
 
 .centered{
@@ -288,6 +290,9 @@ mark {
     text-align: left;
     border-bottom-color: white;
   }
+  .container_aboutCourses{
+	flex-direction: column;
+}
 }
 
 .content{
@@ -336,6 +341,7 @@ li a{
 .courses{
 	float: none;
 	font-size: 14px;
+	list-style-type: none;
 }
 
 .proj_nav{
