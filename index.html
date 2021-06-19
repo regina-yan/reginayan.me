@@ -3,9 +3,11 @@
 <head>
 	<title>Regina Yan</title>
 	<link rel="stylesheet" type="text/css" href="assets/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700|Sunflower:300|Yeseva+One" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 	<link runat="server" rel="icon" type="image/png" href="assets/favicon-01.png">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143754998-1"></script>
 		<script>
@@ -20,56 +22,48 @@
 
 <body>
 	<div class="head">
-	<div style="padding-top: 35px;"></div>
-	<header class="container">
-		<a href="index.html"><img class="logo" src="assets/reginaLogo.png" alt="Regina Yan"></a>
+		<a href="index.html"><img class="logo" src="assets/regina-logo.svg" alt="Regina Yan"></a>	
+		<header class="container">
 		<div class="topnav" id="myTopnav">
-			<a href="uiux.html" class="unselected">UI/UX & Dev</a>
-			<a href="illustration.html" class="unselected">Illustration</a>
-			<a href="branding.html" class="unselected">Branding</a>
-			<a href="misc.html" class="unselected">Miscellaneous</a>
+			<a href="uiux.html" class="unselected">UX</a>
+			<a href="illustration.html" class="unselected">Digital</a>
+			<a href="branding.html" class="unselected">Physical</a>
+			<a href="misc.html" class="unselected">Adventures</a>
 			<a href="about.html" class="unselected">About</a>
 			<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
 		</div>
 	</header>
 	</div>
-
-<div class="container_home">
-	<div class="home_intro">
-	<h3 style="color:white;">Hi there, I'm </h3>
-	<h1 style="color:white;">
-		Regina
-	</h1>
-	<h3 style="color:white;">
-		I'm a designer and engineer with a passion for the outdoors and human-centered design.
-	</h3>
-	<h3 style="color:white;">
-		Thanks for stopping by!
-	</h3>
+	<div class="padding_nav"></div>
+	<div class="content">
+		<!-- <div class="header_home"></div> -->
+		<div class="parallax">
+			<div class="category_title fullwidth">Hi there, I'm Regina</div>
+			<div class="category_subtitle halfwidth">
+				A designer and engineer with a passion for the outdoors and human-centered design
+			</br></br>
+				This site is under construction during summer 2021 (devs, there are bugs! uxds, shield your eyes!) but write-ups will be written and code will be coded soon!
+			</div>
+		</div>
+		<!-- <div class="container_cards">
+			<div class="card">
+				<img class="card_image" src="assets/dog_tile.png"/>
+				<div class="card_title"> Name of Project</div>
+				<div class="card_description"> A question description of what this project is, and hopefully this covers a few lines and feels somewhat substantial</div>
+				<div class="card_tag">Case Study</div>
+			</div>
+			<div class="card"></div>
+			<div class="card"></div>
+		</div> -->
 	</div>
-</div>
+	</div>
 
-<div class="container_intro">
-	<h2 style="font-size: 28px">
-		Featured Projects
-	</h2>
-</div>
-	
-
-<div class="container_featuredProjects">
-	<a href="projects/sa.html"><img class="tile" src="assets/projecttile-39.png"></a>
-	<a href="projects/thedish.html"><img class="tile" src="assets/projecttile-44.png"></a>
-	<a href="projects/snowwars.html"><img class="tile" src="assets/projecttile-09.png"></a>
-	<a href="projects/dmcposter.html"><img class="tile" src="assets/projecttile-08.png"></a>
-	<a href="projects/iceposter.html"><img class="tile" src="assets/projecttile-12.png"></a>
-	<a href="projects/stressball.html"><img class="tile" src="assets/projecttile-13.png"></a>
-</div>
-
-
-<footer>
-	&copy; Regina Yan
-</footer>
-
+	<div class="footer">
+			Regina Yan © 2021
+			<div>
+				<i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+			</div>
+		</div>
 </body>
 <script type="text/javascript">
 	function clickNav() {

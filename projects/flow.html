@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | Flow</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143754998-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());	
+		gtag('config', 'UA-143754998-1');
+		</script>
+</head>
+<body>
+	<div class="head">
+			<a href="../index.html"><img class="logo" id="logo" src="../assets/regina-logo.svg" alt="Regina Yan"></a>
+		<header class="container">
+			<!-- <a href="index.html"><img class="logo" src="assets/reginaLogo.png" alt="Regina Yan"></a> -->
+			<div class="topnav" id="myTopnav">
+				<a href="../uiux.html" class="unselected">UX</a>
+				<a href="../illustration.html" class="unselected">Digital</a>
+				<a href="../branding.html" class="active">Physical</a>
+				<a href="../misc.html" class="unselected">Adventures</a>
+				<a href="../about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+	</div>
+<div style="padding-top: 150px;"></div>
+
+<div class="content">
+	<div class="container_summary">
+		<div class="section_summary">
+			<div class="caption_container">
+				<img class="summary_image" src="../assets/flow-cover.jpg"/>
+			</div>
+		</div>
+		<div class="section_summary_text">
+			<div class="summary_title">Flow</div>
+			<br/>
+			<div class="summary_description"> 
+                During the pandemic, I spent some time living in a beautiful wooden garage at my boyfriend's family's home on Long Island. The long summer days began at the crack of dawn, stuffing a slice of bread in our mouths as we raced to the beach, and catching as many waves as we could before 8am standup. It was the happiest of times, and it inspired this weaving which illustrates the sand patterns made by the waves. And, thanks to my boyfriend's dad's woodworking studio, I made a sturdy loom frame - a major upgrade from the yardstick in <a href="pilot.html" class="link">Pilot</a>!
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+			</div>
+    </div>
+    <div id="container_content" style="padding-top: 150px;"></div>
+	<div class="container_content_stack vertical">
+		<div class="content_text">I made the wooden frame from a couple 1x4's and arranged nails in a zig-zag fashion (when I tried to nail them in in a straight line, the wooden started splitting). I used Everbilt cotton twin rope for the "warp" (vertical strings that run the length of the weaving), and the cardboard pieces at the bottom keep the wool from snagging on the nails and gives me enough yarn to evenly tie up the bottom afterwards.</div>
+		<img class="summary_image" src="../assets/flow-progress1.jpg"/>
+		<div class="content_text">Close-up of the yarn. I used fluffy sheep's wool to mimic the waves (and also make this project go faster!). The orange and speckled grey yarn fringes ("Rya knot") represent the textured sand.</div>
+		<img class="summary_image" src="../assets/flow-progress2.jpg"/>
+    </div>
+    <div class="footer">
+        Regina Yan © 2021
+        <div>
+            <i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+	
+			// Store hash
+			var hash = this.hash;
+	
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+		});
+	});
+</script>
+<script type="text/javascript">
+function clickNav() {
+		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+			logo.style.display = "none";
+		} else {
+			x.className = "topnav";
+			logo.style.display = "block";
+		}
+	}
+	window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+
+</html>
