@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | Personal Website</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143754998-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());	
+		gtag('config', 'UA-143754998-1');
+		</script>
+</head>
+<body>
+	<div class="head">
+			<a href="../index.html"><img class="logo" id="logo" src="../assets/regina-logo.svg" alt="Regina Yan"></a>
+		<header class="container">
+			<div class="topnav" id="myTopnav">
+				<a href="../uiux.html" class="active">UX</a>
+				<a href="../illustration.html" class="unselected">Digital</a>
+				<a href="../branding.html" class="unselected">Physical</a>
+				<a href="../misc.html" class="unselected">Adventures</a>
+				<a href="../about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+	</div>
+<div style="padding-top: 150px;"></div>
+
+<div class="content">
+	<div class="container_summary">
+		<div class="section_summary">
+			<div class="caption_container">
+				<img class="summary_image" src="../assets/site-cover.png"/>
+			</div>
+		</div>
+		<div class="section_summary_text">
+			<div class="summary_title">Personal Website</div>
+			<br/>
+			<div class="summary_description"> 
+                    I think the best way to learn software is to have a project in mind. So, to learn HTML/CSS & Javascript, I built my own portfolio site! 
+                    
+                    This has been a fun, on-going project with benefits beyond creating a space for my work and reflection.  I've found that, as a UI/UX designer working with front-end developers, it's so important to understand the engineering side so that I can 1. be more mindful of their process when I'm creating designs and 2. better communicate my ideas to them.
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+			</div>
+    </div>
+    <div id="container_content" style="padding-top: 150px;"></div>
+	<div class="container_content_stack vertical">
+        <div class="card_title">Version 1: Basic Site</div>
+			<br/>
+        <div class="container_sideBySide"> 
+				<div class="sideBySideItem width_50">
+                        <img class="summary_image" src="../assets/reginayanP1.png"/>
+				</div>
+				<div class="content_text width_50">Skills were low and the urgency to have a portfolio for job applications was high. In this bare-bones version, I learned the basics of HTML/CSS and navigating GitHub and placed a selection of work on a single landing page.
+                    </div>
+            </div>
+        </br></br>
+            <div class="card_title">Version 2: Adding Projects (MVP!)</div>
+			<br/>
+        <div class="container_sideBySide"> 
+				<div class="sideBySideItem width_50">
+                        <img class="summary_image" src="../assets/reginayanP2.png"/>
+				</div>
+				<div class="content_text width_50">In the second iteration, I added all my project images/documentation and focused on styling. I started incorporating Javascript with components like the nav bar.
+                    </div>
+            </div>
+        </br></br>
+        <div class="card_title">Version 3: Responsiveness</div>
+        <br/>
+        <div class="container_sideBySide"> 
+                <div class="sideBySideItem width_50">
+                        <img class="summary_image" src="../assets/reginayanP3.png"/>
+                </div>
+                <div class="content_text width_50">I then focused on responsiveness by learning how to use media queries -- goodbye crammed nav bar items, hello hamburger menu!
+                    </div>
+            </div>
+        </br></br>
+        <div class="card_title">Version 4: Styling Update</div>
+    </br>
+        <div class="container_sideBySide"> 
+                <div class="sideBySideItem width_50">
+                        <img class="summary_image" src="../assets/reginayanP4.png"/>
+                </div>
+                <div class="content_text width_50">With helpful input from friends ("no one wants to see a plain blue screen when they land on your site!"), I added a hero image and changed up the fonts for better style and readability.
+                    </div>
+            </div>
+        </br></br>
+        <div class="card_title">Version 5: UX Improvements</div>
+    </br>
+        <div class="container_sideBySide"> 
+                <div class="sideBySideItem width_50">
+                        <img class="summary_image" src="../assets/reginayanP5.png"/>
+                </div>
+                <div class="content_text width_50">I showed my website to as many people as I could and made improvements based on their feedback. One update I made was the addition of a "More Projects" section at the bottom of each project page -- before, you had to scroll to the top of a page and click back to the main section page in order to navigate to another project. With the "More Projects" section, there's now forward flow!
+                    </div>
+            </div>
+        </br></br>
+            <div class="content_text">... and that brings us to today! I'm in the process of design restyling and code restructuring... stay tuned for a site upgrade soon :D  </div>
+
+    </div>
+    <div class="footer">
+        Regina Yan © 2021
+        <div>
+            <i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+	
+			// Store hash
+			var hash = this.hash;
+	
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+		});
+	});
+</script>
+<script type="text/javascript">
+	function clickNav() {
+		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+			logo.style.display = "none";
+		} else {
+			x.className = "topnav";
+			logo.style.display = "block";
+		}
+	}
+	window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | Wedge</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143754998-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());	
+		gtag('config', 'UA-143754998-1');
+		</script>
+</head>
+<body>
+	<div class="head">
+			<a href="../index.html"><img class="logo" id="logo" src="../assets/regina-logo.svg" alt="Regina Yan"></a>
+		<header class="container">
+			<!-- <a href="index.html"><img class="logo" src="assets/reginaLogo.png" alt="Regina Yan"></a> -->
+			<div class="topnav" id="myTopnav">
+				<a href="../uiux.html" class="unselected">UX</a>
+				<a href="../illustration.html" class="unselected">Digital</a>
+				<a href="../branding.html" class="active">Physical</a>
+				<a href="../misc.html" class="unselected">Adventures</a>
+				<a href="../about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+	</div>
+<div style="padding-top: 150px;"></div>
+
+<div class="content">
+	<div class="container_summary">
+		<div class="section_summary">
+			<div class="caption_container">
+				<img class="summary_image" src="../assets/wedge-cover.jpg"/>
+			</div>
+		</div>
+		<div class="section_summary_text">
+			<div class="summary_title">Wedge</div>
+			<br/>
+			<div class="summary_description"> 
+                This is a fun little coffee table made of scrap plywood and purpleheart. The concept is simple - a table held together by the strength and connection of its individual parts, no fasteners or hardware needed. </br></br>For the materials, I chose scrap plywood for the tabletop and legs because frankly this was a bit of a prototype and I didn't want to invest too much into the table with my limited skill set. For the wedges that hold everything together, however, I used high quality purpleheart to emphasize the importance of that connection. I'm quite proud of how this turned out, and I learned how to use a few new tools along the way! 
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+			</div>
+    </div>
+    <div id="container_content" style="padding-top: 150px;"></div>
+	<div class="container_content_stack vertical">
+		<div class="content_text">I roughly cut the plywood pieces with a jigsaw and then used a file to smooth out the curves and sharpen the slot holes </div>
+		<img class="summary_image" src="../assets/wedge-progress1.jpg"/>
+		<div class="content_text">A view of the table without the top -- two beams are slotted into the leg panels to provide extra support</div>
+        <img class="summary_image" src="../assets/wedge-progress2.jpg"/>
+        <img class="summary_image" src="../assets/wedge-progress3.jpg"/>
+        <div class="container_sideBySide"> 
+				<div class="sideBySideItem width_33">
+                        <img class="summary_image" src="../assets/wedge-progress5.jpg"/>
+				</div>
+				<div class="sideBySideItem width_33">
+                        <img class="summary_image" src="../assets/wedge-progress4.jpg"/>
+                </div>
+                <div class="sideBySideItem width_33">
+                        <img class="summary_image" src="../assets/wedge-progress6.jpg"/>
+				</div>
+			</div>
+    </div>
+    <div class="footer">
+        Regina Yan © 2021
+        <div>
+            <i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+	
+			// Store hash
+			var hash = this.hash;
+	
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+		});
+	});
+</script>
+<script type="text/javascript">
+	function clickNav() {
+		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+			logo.style.display = "none";
+		} else {
+			x.className = "topnav";
+			logo.style.display = "block";
+		}
+	}
+	window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+
+</html>

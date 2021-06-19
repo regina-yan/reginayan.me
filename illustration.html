@@ -3,8 +3,10 @@
 <head>
 	<title>Regina | Illustration</title>
 	<link rel="stylesheet" type="text/css" href="assets/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Sunflower:300|Yeseva+One" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 	<link runat="server" rel="icon" type="image/png" href="assets/favicon-01.png">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143754998-1"></script>
@@ -18,23 +20,104 @@
 </head>
 <body>
 	<div class="head">
-	<div style="padding-top: 35px;"></div>
-	<header class="container">
-		<a href="index.html"><img class="logo" src="assets/reginaLogo.png" alt="Regina Yan"></a>
-		<div class="topnav" id="myTopnav">
-			<a href="uiux.html" class="unselected">UI/UX & Dev</a>
-			<a href="illustration.html" class="active">Illustration</a>
-			<a href="branding.html" class="unselected">Branding</a>
-			<a href="misc.html" class="unselected">Miscellaneous</a>
-			<a href="about.html" class="unselected">About</a>
-			<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
-		</div>
-	</header>
+		<a href="index.html"><img class="logo" src="assets/regina-logo.svg" alt="Regina Yan"></a>		
+		<header class="container">
+			<div class="topnav" id="myTopnav">
+				<a href="uiux.html" class="unselected">UX</a>
+				<a href="illustration.html" class="active">Digital</a>
+				<a href="branding.html" class="unselected">Physical</a>
+				<a href="misc.html" class="unselected">Adventures</a>
+				<a href="about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
 	</div>
-
-<div style="padding-top: 150px;"></div>
-
-<div class="container_featuredProjects">
+	<div class="padding_nav"></div>
+	<div class="content">
+		<!-- <div class="header_home"></div> -->
+		<div class="parallax_category"><div class="category_title">Digital Projects</div></div>
+		<div class="container_cards">
+			<div class="card_category">
+					<div class="card_category_title">Illustration, Branding and Doodling</div>
+					<br/>
+					<div class="card_category_description">
+						My love for digital illustration started with my entry for a local figure skating competition's event logo in 9th grade. The whole thing was made in Microsoft Paint and obviously did not win.
+					</br></br>
+					<img class="card_image tiny" src="assets/skating-logo.png"/>
+				</br></br>
+						Fast foward to now. Equipped with the power of Adobe Creative Suite and the mighty pen tool (and sidekick command-Z), I've had the chance to work on some pretty cool projects. From thinking about representation in product illustration to making logos for community groups, I've loved exploring the realm of digital art, and I think 15-year old me would be proud.
+					</div>
+				</div>
+			<a href="projects/appian-illustrations.html" class="card">
+				<img class="card_image" src="assets/appian-illustrations-cover.png"/>
+				<div class="card_title">Appian Product Illustrations</div>
+				<div class="card_description"> A product illustration initiative I started to introduce graphics to the platform with an emphasis on enhancing user experience and promoting inclusivity</div>
+				<div class="card_tag">Product Illustration</div>
+			</a>
+			<!-- <div class="card">
+				<img class="card_image" src="assets/appian-rebrand.png"/>
+				<div class="card_title">Appian Product Illustrations: Rebrand</div>
+				<div class="card_description">Revamping illustrations to match Appian's new marketing rebrand. Read on to see how our team adapted to new styles while still maintaining our core values</div>
+				<div class="card_description">A year after our illustrations took off, the company went through a complete rebrand, which meant the illustrations needed a new look. Read on to see how our team adapted to new styles but still maintained our core values</div>
+				<div class="card_tag">Product Illustration</div>
+			</div> -->
+			<a href="projects/dartmouthdays.html" class="card">
+				<img class="card_image" src="assets/dartmouth-cover.png"/>
+				<div class="card_title">The Dartmouth Days</div>
+				<div class="card_description">A series of illustrations that reflect on the four most formative years of my life</div>
+				<div class="card_tag">Series</div>
+			</a>
+			<a href="projects/doodle2021.html" class="card">
+				<img class="card_image" src="assets/doodle-cover.png"/>
+				<div class="card_title">A Doodle a Week</div>
+				<div class="card_description"> A doodle a week for my 2021 New Year's Resolution to "get better at drawing", which turned into a sort of illustrated journal </div>
+				<div class="card_tag">Series</div>
+			</a>
+			<a href="projects/doc-logos.html" class="card">
+				<img class="card_image" src="assets/doc-logos-cover.png"/>
+				<div class="card_title"> DOC Logos</div>
+				<div class="card_description"> Logo designs (and re-designs) for Dartmouth Outing Club's "sub-clubs" as well as the administrative Outdoor Programs Office</div>
+				<div class="card_tag">Branding</div>
+			</a>
+			<a href="projects/outing-guide.html" class="card">
+				<img class="card_image" src="assets/dog-cover.png"/>
+				<div class="card_title">Outing Guide Cover</div>
+				<div class="card_description"> A cover illustration for the updated Dartmouth Outing Guide</div>
+				<div class="card_tag">Illustration</div>
+			</a>
+			<a href="projects/woodsmokemag.html" class="card">
+				<img class="card_image" src="assets/woodsmoke.jpeg"/>
+				<div class="card_title">Woodsmoke</div>
+				<div class="card_description">A magazine I designed and published that celebrates the amazing explorations of folks in the DOC.</div>
+				<div class="card_tag">Branding</div>
+			</a>
+			<a href="projects/adventure-book.html" class="card">
+				<img class="card_image" src="assets/adventure-book-cover.png"/>
+				<div class="card_title"> Adventure Book</div>
+				<div class="card_description"> A handmade book showcasing some outdoors experiences during my time at Dartmouth</div>
+				<div class="card_tag">Bookbinding</div>
+			</a>
+			<a href="projects/cookies.html" class="card">
+				<img class="card_image" src="assets/cookiesforkc-cover2.png"/>
+				<div class="card_title">Cookies for KC</div>
+				<div class="card_description">Logos and illustrations for my sister's baking service that donated all proceeds to local business impacted by COVID-19</div>
+				<div class="card_tag">Branding</div>
+			</a>
+			<a href="projects/wintercarnival.html" class="card">
+				<img class="card_image" src="assets/snowwars-cover.png"/>
+				<div class="card_title">Winter Carnival poster</div>
+				<div class="card_description"> Winning Poster for Dartmouth's 2018 Winter Carnival "Snow Wars: May the Frost be with You"</div>
+				<div class="card_tag">Illustration</div>
+			</a>
+			<a href="projects/tsd.html" class="card">
+					<img class="card_image" src="assets/twinstatederby-cover.png"/>
+					<div class="card_title">Twin State Derby</div>
+					<div class="card_description">Logos and Merchandise for a womens roller derby league in the Upper Valley</div>
+					<div class="card_tag">Branding</div>
+			</a>
+		</div>
+	</div>
+<!-- <div class="container_featuredProjects">
 	<a href="projects/outingguide.html"><img class="tile" src="assets/dog_tile.png"></a>
 	<a href="projects/adventurebook.html"><img class="tile" src="assets/adventure7.png"></a>
 	<a href="projects/technigala.html"><img class="tile" src="assets/projecttile-56.png"></a>
@@ -54,14 +137,17 @@
 	<a href="projects/grafficity.html"><img class="tile" src="assets/projecttile-48.png"></a>
 	<a href="projects/thefifty.html"><img class="tile" src="assets/projecttile-30.png"></a>
 	<a href="projects/provost.html"><img class="tile" src="assets/projecttile-24.png"></a>
-	<!-- <img class="tile" src="assets/projecttile-26.png" style="height:300px; width:300px;"> -->
+	<img class="tile" src="assets/projecttile-26.png" style="height:300px; width:300px;">
 	
-</div>
+</div>-->
 
 
-<footer>
-	&copy; Regina Yan
-</footer>
+<div class="footer">
+		Regina Yan © 2021
+		<div>
+			<i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+		</div>
+	</div>
 
 </body>
 <script type="text/javascript">
