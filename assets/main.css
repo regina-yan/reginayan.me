@@ -623,7 +623,7 @@ header::after{
 			font-size: 1rem;
 		}
 		.card_description{
-			font-size: 2rem;
+			font-size: 2.2rem;
 		}
 		.content_text{
 			font-size: 1.8rem;
@@ -656,6 +656,14 @@ header::after{
 			border-radius: 60px;
 			font-size: 2rem;
 		}
+		.button_circle_arrow{
+			width: 120px;
+			height: 120px;
+			border-radius: 60px;
+			font-size: 2rem;
+			bottom:	-64px;
+			left: calc(50% - 60px);
+		}
 		.card_tag{
 			font-size: 2rem;
 			padding: 10px;
@@ -668,6 +676,7 @@ header::after{
 			font-size: 2rem;
 			padding: 30px;
 		}
+		
 		.footer{
 			font-size: 1.25rem;
 			/* display: block; */
@@ -676,6 +685,7 @@ header::after{
 			font-size: 3rem;
 		}
 		.summary_description{
+			font-size: 30px;
 			font-size: 1.4rem;
 		}
 		.parallax{
