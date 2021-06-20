@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="head">
-		<a href="index.html"><img class="logo" src="assets/regina-logo.svg" alt="Regina Yan"></a>
+		<a href="index.html"><img class="logo" id="logo" src="assets/regina-logo.svg" alt="Regina Yan"></a>
 		<header class="container">
 			<div class="topnav" id="myTopnav">
 				<a href="uiux.html" class="unselected">UX</a>
@@ -182,10 +182,13 @@
 <script type="text/javascript">
 	function clickNav() {
 		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
 		if (x.className === "topnav") {
 			x.className += " responsive";
+			logo.style.display = "none";
 		} else {
 			x.className = "topnav";
+			logo.style.display = "block";
 		}
 	}
 	function showCard(id) {

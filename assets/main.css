@@ -603,16 +603,95 @@ header::after{
 }
   @media only screen 
 	/* and (min-device-width: 375px)  */
-	and (max-device-width: 667px) 
+	/* and (max-device-width: 667px)  */
+	and (max-device-width: 768px) 
 	and (-webkit-min-device-pixel-ratio: 2) { 
+		header.container{
+			font-size: 2.5rem;
+		}
+		.category_subtitle{
+			font-size: 2.5rem;
+			padding-right: 30px;
+		}
+		.category_title{
+			font-size: 4.5rem;
+		}
+		.card_category_title{
+			font-size: 2rem;
+		}
+		.card_category_description{
+			font-size: 1rem;
+		}
+		.card_description{
+			font-size: 2rem;
+		}
+		.content_text{
+			font-size: 1.8rem;
+		}
+		.image_text{
+			font-size: 1.4rem;
+		}
+		.caption_title{
+			font-size: 2rem;
+		}
+		.caption_description{
+			font-size: 2rem;
+		}
+		.caption_image{
+			width: 75px;
+			height: 75px;
+		}
+		.card{
+			height: 800px;
+		}
+		.card_image{
+			height: 400px;
+		}
+		.card_title{
+			font-size: 2.5rem;
+		}
+		.button_circle{
+			width: 120px;
+			height: 120px;
+			border-radius: 60px;
+			font-size: 2rem;
+		}
+		.card_tag{
+			font-size: 2rem;
+			padding: 10px;
+		}
+		.button_secondary{
+			font-size: 2rem;
+			padding: 30px;
+		}
+		.button_primary{
+			font-size: 2rem;
+			padding: 30px;
+		}
+		.footer{
+			font-size: 1.25rem;
+			/* display: block; */
+		}
+		.summary_title{
+			font-size: 3rem;
+		}
+		.summary_description{
+			font-size: 1.4rem;
+		}
+		.parallax{
+			background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+            url("heroshot.jpg");
+		}
 		.halfwidth{
 			width: 100%;
 		}
 	.card_category{
-		width: 80%
+		width: 80%;
+		height: fit-content;
 	}
 		.card{
 		width: 80%;
+		font-size: 1.4rem;
 	}
 		.width_50{
 		width: 100%
