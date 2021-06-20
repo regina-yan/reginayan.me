@@ -671,10 +671,12 @@ header::after{
 		.button_secondary{
 			font-size: 2rem;
 			padding: 30px;
+			-webkit-appearance: none;
 		}
 		.button_primary{
 			font-size: 2rem;
 			padding: 30px;
+			-webkit-appearance: none;
 		}
 		
 		.footer{
