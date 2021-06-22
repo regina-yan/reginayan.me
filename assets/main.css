@@ -340,6 +340,10 @@ h3{
 	margin-top: -25px;
 	margin-bottom: 30px;
 }
+.section_icon{
+	height: 60px;
+	margin-right: 15px;
+}
 .container_content{
 	width: 80%;
 	display: flex;
@@ -468,8 +472,11 @@ button:focus{
 .section_title{
 	font-weight: 700;
 	font-size: 24px;
+	font-family: Cabin, sans-serif;
 	color: var(--text-header-color);
 	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
 }
 .container_sideBySide{
 	display: flex;
@@ -615,6 +622,9 @@ header::after{
 		header.container{
 			font-size: 2.5rem;
 		}
+		.section_title{
+			font-size: 2.5rem;
+		}
 		.category_subtitle{
 			font-size: 2.5rem;
 			padding-right: 30px;
@@ -691,6 +701,7 @@ header::after{
 		}
 		.summary_title{
 			font-size: 3rem;
+			margin-top: 40px;
 		}
 		.summary_description{
 			font-size: 30px;
