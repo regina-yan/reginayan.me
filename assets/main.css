@@ -10,6 +10,7 @@
 	--highlight-darken: #12c98c;
 	--tag-background: #b6e3d5;
 	--card-background: #e9f5f4;
+	--card-hover: #f6f6f6;
 }
 html{
 	height: 100%;
@@ -169,7 +170,7 @@ h3{
 	position: relative;
 }
 .card:hover{
-	background-color: #f6f6f6;
+	background-color: var(--card-hover);
 	text-decoration: none;
 }
 .card_category{
@@ -349,6 +350,26 @@ h3{
 	display: flex;
 	margin: 0 auto;
 	padding-bottom: 30px;
+	/* margin-top: 150px; */
+	/* height: calc(100vh - 150px); */
+}
+.container_content_wrapper{
+	width: 85%;
+	max-width: 900px;
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 6px;
+	background-color: var(--card-hover);
+	padding: 10% 5%;
+	/* margin-top: 150px; */
+	/* height: calc(100vh - 150px); */
+}
+.container_content_wrapper_content{
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+	/* padding-bottom: 30px; */
 	/* margin-top: 150px; */
 	/* height: calc(100vh - 150px); */
 }
