@@ -39,8 +39,8 @@
 	<div class="container_summary_short">
 		<div class="section_summary">
 			<div class="caption_container">
-				<img class="summary_image profile_static" src="assets/reggie.JPG"/>
-				<img class="summary_image" src="assets/profile-fast.gif"/>
+				<img class="summary_image" id="profile" src="assets/reggie.JPG"/>
+				<!-- <img class="summary_image" src="assets/profile-fast.gif"/> -->
 				<!-- <button class="caption_icon">
 						<i class="fas fa-info"></i>
 				</button> -->
@@ -216,6 +216,9 @@
 	});
 </script>
 <script type="text/javascript">
+	var image = document.getElementById("profile");
+	image.onmouseover = function() {  image.src = "assets/profile-fast.gif"; }
+	image.onmouseout = function() {  image.src = "assets/reggie.JPG"; }
 	function clickNav() {
 		var x = document.getElementById("myTopnav");
 		var logo = document.getElementById("logo");
