@@ -25,6 +25,11 @@ body{
 	/* parallax */
 	height: 100%
 }
+body:after{
+	display:none;
+	content: url("regina-logo-2.svg");
+   }
+   
 a{
 	text-decoration: none;
 	color: var(--text-color)
