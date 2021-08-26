@@ -644,7 +644,6 @@ header::after{
 }
 
 .logo:hover{
-	/* transform: scale(1.05); */
 	background: url("reginalogo-02.svg") no-repeat;
 	background-position: 40px;
 	display: inline-block;
