@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | Appian Product Illustrations (Rebrand!)</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143754998-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());	
+		gtag('config', 'UA-143754998-1');
+		</script>
+</head>
+<body>
+	<div class="head">
+			<a href="../index.html" class="logo" id="logo"></a>
+		<header class="container">
+			<div class="topnav" id="myTopnav">
+				<a href="../uiux.html" class="unselected">UX</a>
+				<a href="../illustration.html" class="active">Digital</a>
+				<a href="../physical.html" class="unselected">Physical</a>
+				<a href="../misc.html" class="unselected">Adventures</a>
+				<a href="../about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+	</div>
+<div style="padding-top: 150px;"></div>
+
+<div class="content">
+	<div class="container_summary">
+		<div class="section_summary">
+			<div class="caption_container">
+				<img class="summary_image" src="../assets/appian-rebrand.png"/>
+			</div>
+		</div>
+		<div class="section_summary_text">
+			<div class="summary_title">Appian Product Illustrations (Rebrand!)</div>
+			<br/>
+			<div class="summary_description"> 
+                    A year after introducing product illustrations to the Appian platform, our company went through a full rebrand. This rebrand included a new style guide for illustrations -- oof, a lot of illustrations to update! I worked with the marketing team to push the direction of the new style to continue embodying the values we had in the initial illustrations, and I continued leading our platform illustrations team to rebrand and improve upon our existing graphics.
+					
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+			</div>
+    </div>
+    <div id="container_content" style="padding-top: 150px;"></div>
+	<div class="container_content_stack vertical">
+			<div class="card_title">Sample Illustrations</div>
+		<img class="summary_image" src="../assets/rebrand-00.png"/>
+		<div class="image_text">Records Welcome Screen</div>
+		<img class="summary_image" src="../assets/rebrand-0.png"/>
+		<div class="image_text">Government Acquisitions Management Welcome Screen </div>
+		<img class="summary_image" src="../assets/rebrand-1.png"/>
+		<div class="image_text">Campus Pass Welcome Screen</div>
+		<img class="summary_image" src="../assets/rebrand-2.png"/>
+		<div class="image_text">Workforce Safety / Campus Pass Survey</div>
+		<img class="summary_image" src="../assets/rebrand-3.png"/>
+        <div class="image_text">Stay at Home Illustration</div>
+        <img class="summary_image" src="../assets/rebrand-4.png"/>
+        <div class="image_text">Government Acquisitions Management Automation Illustration</div>
+        <!-- <img class="summary_image" src="../assets/rebrand-5.png"/>
+        <div class="image_text">Landing Page Example Illustration</div>
+        <img class="summary_image" src="../assets/rebrand-6.png"/>
+		<div class="image_text">Call to Action Example Illustration</div> -->
+    </div>
+</div>
+<div class="footer">
+        Regina Yan © 2021
+        <div>
+            <i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+        </div>
+    </div>
+</body>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+	
+			// Store hash
+			var hash = this.hash;
+	
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+		});
+	});
+</script>
+<script type="text/javascript">
+	function clickNav() {
+		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+			logo.style.display = "none";
+		} else {
+			x.className = "topnav";
+			logo.style.display = "block";
+		}
+	}
+	window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+
+</html>
