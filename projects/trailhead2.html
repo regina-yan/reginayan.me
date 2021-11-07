@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | Trailhead 2.0</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143754998-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());	
+		gtag('config', 'UA-143754998-1');
+		</script>
+</head>
+<body>
+	<div class="head">
+			<a href="../index.html" class="logo" id="logo"></a>
+		<header class="container">
+			<!-- <a href="index.html"><img class="logo" src="assets/reginaLogo.png" alt="Regina Yan"></a> -->
+			<div class="topnav" id="myTopnav">
+				<a href="../uiux.html" class="active">UX</a>
+				<a href="../illustration.html" class="unselected">Digital</a>
+				<a href="../physical.html" class="unselected">Physical</a>
+				<a href="../misc.html" class="unselected">Adventures</a>
+				<a href="../about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+	</div>
+<div style="padding-top: 150px;"></div>
+
+<div class="content">
+	<div class="container_summary">
+		<div class="section_summary">
+			<div class="caption_container">
+				<img class="summary_image shadow" src="../assets/trailhead21.png"/>
+			</div>
+		</div>
+		<div class="section_summary_text">
+			<div class="summary_title">Trailhead 2.0</div>
+			<br/>
+			<div class="summary_description"> 
+				Trailhead v1 was great, but there were so many things we could do better. Dartmouth's Outdoor Programs Office contacted me in 2021 to help with a redesign of Trailhead's platform with 2 main goals: Improve the user experience for all users (trip leaders, participants and approvers) and give the site more personality.
+				</br> 
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+			</div>
+    </div>
+    <div id="container_content" style="padding-top: 150px;"></div>
+	<div class="container_content_stack vertical">
+
+			<div class="card_title">User Research</div>
+			<div class="content_text">
+                I spent a few weeks conducting user research to improve Trailhead for users. I surveyed 70+ trip leaders, who use the site to create trips and manage the participants ("trippees") to find ways to streamling the trip creation process and brainstorm nice-to-haves. I conducted 1-on-1 interviews with Outdoor Programs Office members who manage the approval process (approving a trip, gathering gear, and assigning purchase cards and vehicles) to understand how their workflow transitioned from paper-based process to an online platform. Throughout this research phase, I collaborated closely with Rory Gawler, the Office's Assistant Director for Student Advising and the project's primary stakeholder, to make sure the designs followed the vision of making Trailhead a joy-to-use trips hub. 
+            </div>
+            <img class="summary_image" src="../assets/trailhead-interview.png"/>
+            <div class="image_text">Interview with an Outdoor Programs Office member to understand frustrations with the existing platform</div>
+            <div class="card_title">Wireframes</div>
+			<div class="content_text">
+                Based on findings from user research, I created wireframes to quickly show improvements we could make to user experience and additional features we could add that would make Trailhead a better experience for trip leaders and Outdoor Programs Office members. 
+            </div>
+            <img class="summary_image" src="../assets/trailhead-balsamiq.png"/>
+            <div class="card_title">Sample Club Illustrations</div>
+			<div class="content_text">
+					To add some visual interest, I created illustrations for each club. The illustrations appear on sign up pages and club pages
+            </div>
+            <img class="summary_image" src="../assets/c&t.png"/>
+            <div class="image_text">Cabin & Trail (Hiking)</div>
+            <img class="summary_image" src="../assets/mountaineering.png"/>
+            <div class="image_text">Mountaineering</div>
+            <img class="summary_image" src="../assets/viva hardigg.png"/>
+            <div class="image_text">Viva Hardigg (formerly Women in the Wilderness)</div>
+            <img class="summary_image" src="../assets/ledyard.png"/>
+			<div class="image_text">Ledyard (Canoe and Kayaking)</div>
+            <div class="card_title">Sample Page Redesigns</div>
+            <div class="content_text">
+                Below are a few of the pages I redesigned. I focused on maintaining the things folks liked while improving the user experience (reorganization of information) and adding in new features. In terms of style, we wanted the site to look clean but "crunchy", which I balanced with the white space and chalk-textured illustrations
+            </div>
+			<img class="summary_image shadow" src="../assets/trailhead21.png"/>
+            <div class="image_text">All Trips Page</div>
+            <img class="summary_image shadow" src="../assets/trailhead23.png"/>
+        <div class="image_text">Trip Sign-Up Page</div>
+        <img class="summary_image shadow" src="../assets/trailhead22.png"/>
+        <div class="image_text">Create Trip Page</div>
+		<br>
+		
+    </div>
+    <div class="footer">
+        Regina Yan © 2021
+        <div>
+            <i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+	
+			// Store hash
+			var hash = this.hash;
+	
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+		});
+	});
+</script>
+<script type="text/javascript">
+	function clickNav() {
+		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+			logo.style.display = "none";
+		} else {
+			x.className = "topnav";
+			logo.style.display = "block";
+		}
+	}
+	window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+
+</html>

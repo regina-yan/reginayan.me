@@ -49,6 +49,59 @@ b{
 	color: var(--text-header-color);
 	font-weight: 700;
 }
+.outerr{
+	width: 95%;
+	height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 9px;
+  /* display: grid; */
+}
+#container{
+  perspective: 50px;
+  position: relative;
+  /* position: absolute; */
+  /* grid-column: 1; */
+  /* grid-row: 1; */
+}
+#inner {
+  	  /* The image used */
+		/* background-image: url('heroshot.jpg'); */
+		border-radius: 9px;
+		/* margin: 0 0 50px 0; */
+		margin: 0 auto;
+		height: 70vh; 
+		width: 100vw;
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		/* background-position: right bottom; */
+		/* background-position: center; */
+		background-repeat: no-repeat;
+		background-size: cover;
+		flex-wrap: wrap;
+		display: flex;
+		align-items: right;
+		align-content: center;
+		position: right;
+		/* padding-left: 40px; */
+		/* display: grid; */
+
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+.hero-image{
+	width: 120%;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+}
 /* b{
 	color: black;
 }
@@ -147,16 +200,27 @@ h3{
 	display: flex;
 	align-items: center;
 }
+.category_text{
+	position: absolute;
+	top: 30vh;
+	left: 50px;
+}
 .category_title{
 	font-weight: 700;
 	font-size: 36px;
 	color: white;
+	
+	/* top: 30vh;
+	left: 50px; */
 }
 .category_subtitle{
 	font-weight: 400;
 	font-size: 20px;
 	font-family: Source Sans Pro, sans-serif;
 	color: white;
+	
+	/* top: calc(30vh + 40px);
+	left: 50px; */
 }
 .container_cards{
 	max-width: 1200px;
@@ -190,6 +254,14 @@ h3{
 }
 /* Change card stacking on tablets and phones */
 @media only screen and (max-width: 1260px) {
+	.hero-image{
+		top: 0;
+	}
+	.category_text{
+		position: absolute;
+		top: 20vh;
+		/* left: 50px; */
+	}
 	.card, .card_category {
 	  width: 40%;
 	}
@@ -243,9 +315,15 @@ h3{
 }
 /* Turn off parallax scrolling for all tablets and phones */
 @media only screen and (max-device-width: 1366px) {
+	.hero-image{
+		width: 100%;
+	}
 	.parallax {
 	  background-attachment: scroll;
 	}
+  }
+  .category_text{
+	  width: 70%;
   }
 
 /* Page */
@@ -285,6 +363,9 @@ h3{
 	display: block;
 	margin: auto;
 	margin-bottom: 30px;
+}
+.shadow{
+	box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 15%)
 }
 .profile_static{
 	position: absolute;
@@ -743,7 +824,7 @@ header::after{
 		}
 		.parallax{
 			background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-            url("heroshot.jpg");
+			url("heroshot.jpg");
 		}
 		.halfwidth{
 			width: 100%;
