@@ -448,6 +448,13 @@ h3{
 	/* margin-top: 150px; */
 	/* height: calc(100vh - 150px); */
 }
+.container_callout{
+	display: flex;
+	margin: 0 auto;
+	border-radius: 6px;
+	background-color: var(--card-hover);
+	padding: 2%
+}
 .container_content_wrapper{
 	width: 85%;
 	max-width: 900px;
@@ -610,6 +617,9 @@ button:focus{
 }
 .width_50{
 	width: 45%
+}
+.width_66{
+	width: 64%
 }
 input{
 	border: none;
