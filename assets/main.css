@@ -220,6 +220,11 @@ h3{
 	/* top: 30vh;
 	left: 50px; */
 }
+.site_title{
+	font-weight: 700;
+	font-size: 36px;
+	color: white;
+}
 .category_subtitle{
 	font-weight: 400;
 	font-size: 20px;
