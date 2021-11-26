@@ -216,9 +216,6 @@ h3{
 	font-weight: 700;
 	font-size: 36px;
 	color: black;
-	
-	/* top: 30vh;
-	left: 50px; */
 }
 .site_title{
 	font-weight: 700;
@@ -230,9 +227,6 @@ h3{
 	font-size: 20px;
 	font-family: Source Sans Pro, sans-serif;
 	color: white;
-	
-	/* top: calc(30vh + 40px);
-	left: 50px; */
 }
 .container_cards{
 	max-width: 1200px;
