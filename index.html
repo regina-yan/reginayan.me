@@ -42,10 +42,41 @@
 			<div class="category_subtitle halfwidth">
 				A designer and engineer with a passion for the outdoors and human-centered design
 			</br></br>
-				This site is under construction during winter/spring 2022 (devs, there are bugs! UXDs, shield your eyes!) but write-ups will be written and code will be coded soon!
+				This site is under construction during <p id="month" style="display:inline"></p> <p id="year" style="display:inline"></p> (devs, there are bugs! UXDs, shield your eyes!) but write-ups will be written and code will be coded soon!
 			</div>
 		</div>
+		
 	</div>
+	<div class="content">
+		<div class="category">
+			<div class="category_title">Featured Projects</div>
+		</div>
+	<div class="container_cards">
+		<a href="projects/metro.html" class="card_full">
+			<div class="container_sideBySide">
+				<div class="sideBySideItem width_33">
+					<img class="card_image_full" src="assets/metro-cover.jpg"/>
+				</div>
+				<div class="sideBySideItem width_66">
+					<div class="card_title">Ode to Metro</div>
+					<div class="card_description">Handmade stools inspired by the good and the bad of WMATA</div>
+				</div>
+			</div>
+		</a>
+		<a href="projects/metro.html" class="card_full">
+			<div class="container_sideBySide">
+				<div class="sideBySideItem width_33">
+					<img class="card_image_full" src="assets/metro-cover.jpg"/>
+				</div>
+				<div class="sideBySideItem width_66">
+					<div class="card_title">Ode to Metro</div>
+					<div class="card_description">Handmade stools inspired by the good and the bad of WMATA</div>
+					<div class="card_tag">Fiber Arts</div>
+				</div>
+			</div>
+		</a>									
+	</div>
+</div>
 	</div>
 
 	<div class="footer">
@@ -68,6 +99,17 @@
 		}
 	}
 </script>
-
+<script>
+	const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	
+	const d = new Date();
+	let name = month[d.getMonth()];
+	document.getElementById("month").innerHTML = name;
+</script>
+<script>
+	const y = new Date();
+	let year = y.getFullYear();
+	document.getElementById("year").innerHTML = year;
+</script>
 
 </html>
