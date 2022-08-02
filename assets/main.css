@@ -235,6 +235,9 @@ h3{
 	justify-content: space-evenly;
 	margin: 0 auto;
 }
+.featured{
+	max-width: 600px;
+}
 .card{
 	border:1px solid #e0e0e0;
 	border-radius: 9px;
