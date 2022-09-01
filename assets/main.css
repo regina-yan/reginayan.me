@@ -411,18 +411,88 @@ h3{
 	font-size: 14px;
 	/* color: #747474; */
 }
+.card_tag_container{
+	position: absolute;
+	bottom: 3%;
+	left: 4%;
+	display: flex;
+}
+.card_tag_container_relative{
+	position: absolute;
+	bottom: 18px;
+	left: 4%;
+	display: flex;
+}
 .card_tag{
 	background-color: var(--tag-background);
 	border-radius: 3px;
 	border: 2px solid var(--tag-background);
 	display: inline-block;
-	padding: .5% 1.5%;
-	position: absolute;
-	bottom: 3%;
-	left: 4%;
+	padding: .5% 3%;
+	margin-right: 5%;
 	text-transform: uppercase;
 	color: white;
 	font-weight: 700;
+	white-space: nowrap;
+}
+.punchneedle{
+	border: 2px solid #c0abf5;
+	background-color: #c0abf5;
+}
+.wood{
+	border: 2px solid #f7be81;
+	background-color: #f7be81;
+}
+.painting{
+	border: 2px solid #ed98ac;
+	background-color: #ed98ac;
+}
+.sewing{
+	border: 2px solid #edda87;
+	background-color: #edda87;
+}
+.ux{
+	border: 2px solid #859bff;
+	background-color: #859bff;
+}
+.web{
+	border: 2px solid #9adb84;
+	background-color: #9adb84;
+}
+.htmlcss{
+	border: 2px solid #81d8e3;
+	background-color: #81d8e3;
+}
+.illustrator{
+	border: 2px solid #edda87;
+	background-color: #edda87;
+}
+.photoshop{
+	border: 2px solid #f7be81;
+	background-color: #f7be81;
+}
+.indesign{
+	border: 2px solid #f1a7a7;
+	background-color: #f1a7a7;
+}
+.series{
+	border: 2px solid #9adb84;
+	background-color: #9adb84;
+}
+.branding{
+	border: 2px solid #81d8e3;
+	background-color: #81d8e3;
+}
+.biking{
+	border: 2px solid #9adb84;
+	background-color: #9adb84;
+}
+.climbing{
+	border: 2px solid #f7be81;
+	background-color: #f7be81;
+}
+.relative{
+	position: relative;
 }
 /* Turn off parallax scrolling for all tablets and phones */
 @media only screen and (max-device-width: 1366px) {
@@ -750,6 +820,9 @@ button:focus{
 }
 .sideBySideItem_isLast{
 	padding-right: 0%;
+}
+.width_25{
+	width: 22%;
 }
 .width_33{
 	width: 30%;
