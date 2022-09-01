@@ -416,6 +416,8 @@ h3{
 	bottom: 3%;
 	left: 4%;
 	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
 }
 .card_tag_container_relative{
 	position: absolute;
@@ -428,12 +430,14 @@ h3{
 	border-radius: 3px;
 	border: 2px solid var(--tag-background);
 	display: inline-block;
-	padding: .5% 3%;
-	margin-right: 5%;
+	padding: .5% 2%;
+	margin-right: 2%;
 	text-transform: uppercase;
 	color: white;
 	font-weight: 700;
 	white-space: nowrap;
+	margin-top: 2%;
+	font-size: 0.8em;
 }
 .punchneedle{
 	border: 2px solid #c0abf5;
@@ -450,6 +454,10 @@ h3{
 .sewing{
 	border: 2px solid #edda87;
 	background-color: #edda87;
+}
+.weaving{
+	border: 2px solid #9adb84;
+	background-color: #9adb84;
 }
 .ux{
 	border: 2px solid #859bff;
@@ -490,6 +498,14 @@ h3{
 .climbing{
 	border: 2px solid #f7be81;
 	background-color: #f7be81;
+}
+.college{
+	border: 2px solid #afbbab;
+	background-color: #afbbab;
+}
+.film{
+	border: 2px solid #859bff;
+	background-color: #859bff;
 }
 .relative{
 	position: relative;
