@@ -244,6 +244,7 @@ h3{
 	0%, 20%, 31%, 40%, 51%, 60%, 71%, 100% { border-color: transparent }
 	21%, 30%, 41%, 50%, 61%, 70% { border-color: var(--highlight-color)}
 } 
+
 .category_subtitle{
 	font-weight: 400;
 	font-size: 20px;
