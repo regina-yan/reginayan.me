@@ -174,9 +174,11 @@ h3{
 	  background-size: cover;
 	  flex-wrap: wrap;
 	  display: flex;
-	  align-items: center;
-	  align-content: center;
+	  align-items: left;
+	  align-content: left;
 	  padding-left: 40px;
+	  justify-content: center;
+	  flex-direction: column;
 }
 .fullwidth{
 	width: 100%
@@ -217,21 +219,63 @@ h3{
 	font-size: 36px;
 	color: black;
 }
+.site_title_container{
+	display: flex;
+	justify-content: left;
+	width: fit-content;
+}
 .site_title{
 	font-weight: 700;
 	font-size: 36px;
 	color: white;  
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .1em solid var(--highlight-color); /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	animation: 
+    	blink-caret 4s step-end forwards;
 }
-.site_title{
-	font-weight: 700;
-	font-size: 36px;
-	color: white;
-}
+/* @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  } */
+  
+@keyframes blink-caret {
+	0%, 20%, 31%, 40%, 51%, 60%, 71%, 100% { border-color: transparent }
+	21%, 30%, 41%, 50%, 61%, 70% { border-color: var(--highlight-color)}
+} 
+
 .category_subtitle{
 	font-weight: 400;
 	font-size: 20px;
 	font-family: Source Sans Pro, sans-serif;
 	color: white;
+}
+.inline_tag{
+	display: inline;
+	background-color: var(--highlight-color);
+	border-radius: 3px;
+	border: 2px solid var(--highlight-color);
+	display: inline-block;
+	padding: .5%;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 700;
+	white-space: nowrap;
+	font-size: 0.8em;
+	font-family: "Cabin";
+	animation: fade 3s infinite;
+}
+.offset{
+	animation: offset_fade 3s infinite;
+}
+@keyframes fade{
+	0% { opacity: 0;}
+	40% { opacity: 1;}
+}
+@keyframes offset_fade{
+	55%, 30% { opacity: 0;}
+	75% { opacity: 1;}
 }
 .container_cards{
 	max-width: 1200px;
