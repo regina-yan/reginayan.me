@@ -565,6 +565,9 @@ h3{
 	margin: auto;
 	margin-bottom: 30px;
 }
+.outline{
+	border: 1px solid #e0e0e0
+}
 .shadow{
 	box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 15%)
 }
@@ -844,7 +847,7 @@ button:focus{
 	width: 30%;
 }
 .width_50{
-	width: 45%
+	width: 48%
 }
 .width_66{
 	width: 64%
