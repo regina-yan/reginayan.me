@@ -269,13 +269,20 @@ h3{
 .offset{
 	animation: offset_fade 3s infinite;
 }
+.fadeIn{
+	animation: fadeIn 10s forwards;
+}
 @keyframes fade{
 	0% { opacity: 0;}
-	40% { opacity: 1;}
+	25% { opacity: 1;}
 }
 @keyframes offset_fade{
 	55%, 30% { opacity: 0;}
 	75% { opacity: 1;}
+}
+@keyframes fadeIn{
+	0%, 20% { opacity: 0;}
+	24% { opacity: 1;}
 }
 .container_cards{
 	max-width: 1200px;
@@ -548,8 +555,8 @@ h3{
 	background-color: #afbbab;
 }
 .film{
-	border: 2px solid #859bff;
-	background-color: #859bff;
+	border: 2px solid #afbbab;
+	background-color: #afbbab;
 }
 .relative{
 	position: relative;

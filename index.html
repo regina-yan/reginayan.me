@@ -42,8 +42,8 @@
 				<div class="site_title" id="title">
 				</div>
 			</div>
-			<div class="category_subtitle halfwidth">
-				A designer and engineer with a passion for <div class="inline_tag" id="tag1"></div> and <div class="inline_tag offset" id="tag2">Human-Centered Design</div>
+			<div class="category_subtitle halfwidth fadeIn" style="visibility:hidden" id="delay">
+				A designer and engineer with a passion for <div class="inline_tag" id="tag1"></div> and <div class="inline_tag" id="tag2">Human-Centered Design</div>
 			</br></br>
 				This site is under construction during <p id="month" style="display:inline"></p> <p id="year" style="display:inline"></p> (devs, there are bugs! UXDs, shield your eyes!) but write-ups will be written and code will be coded soon!
 			</div>
@@ -123,19 +123,22 @@
 		var txt = 'Hi there, I’m Regina';
 		var speed = 50;
 		var speed2 = 3000;
-		var index = 0;
+		let index = 0;
 		var index2 = 0;
 		var text = ['biking', 'upcycling', 'fiber arts', 'rock climbing', 'ice skating'];
 		var textColor = ['#9adb84', '#edda87', '#c0abf5', '#f7be81', "#81d8e3"];
 		var textColor2 = ['#f1a7a7', '#9adb84', '#859bff'];
 		var text2 = ['women in tech', 'sustainability', 'inclusivity in the outdoors'];
+		const fadeIn = document.getElementById('delay');
+		setTimeout(() => {
+		fadeIn.style.visibility = 'visible';}, 10); 
 		
 		
 		
 		window.onload = function () {
 			typeWriter();
-			tags();
-			setTimeout(tags2, speed2/2);
+			tags(text, index, textColor, "tag1");
+			tags(text2, index2, textColor2, "tag2");
 			
 		};
 		function typeWriter() {
@@ -145,34 +148,21 @@
 			setTimeout(typeWriter, speed);
 			}
 		};
-		function tags() {
-		  if (index < text.length-1) {
-			document.getElementById("tag1").innerHTML = text[index];
-			document.getElementById("tag1").style.backgroundColor = textColor[index];
-			document.getElementById("tag1").style.borderColor = textColor[index];
-			index++;
-			setTimeout(tags, speed2);
+		function tags(t, i, tc, id, s) {
+			console.log(t.length);
+		  if (i < t.length-1) {
+			document.getElementById(id).innerHTML = t[i];
+			document.getElementById(id).style.backgroundColor = tc[i];
+			document.getElementById(id).style.borderColor = tc[i];
+			i++;
+			setTimeout(function() {tags(t,i,tc,id)}, 3000);
 		  } else {
-			document.getElementById("tag1").innerHTML = text[index];
-			document.getElementById("tag1").style.backgroundColor = textColor[index];
-			document.getElementById("tag1").style.borderColor = textColor[index];
-			index = 0;
-			setTimeout(tags, speed2);
-		  }
-		}
-		function tags2() {
-		  if (index2 < text2.length-1) {
-			document.getElementById("tag2").innerHTML = text2[index2];
-			document.getElementById("tag2").style.backgroundColor = textColor2[index2];
-			document.getElementById("tag2").style.borderColor = textColor2[index2];
-			index2++;
-			setTimeout(tags2, speed2);
-		  } else {
-			document.getElementById("tag2").innerHTML = text2[index2];
-			document.getElementById("tag2").style.backgroundColor = textColor2[index2];
-			document.getElementById("tag2").style.borderColor = textColor2[index2];
-			index2 = 0;
-			setTimeout(tags2, speed2);
+			console.log("there"),
+			document.getElementById(id).innerHTML = t[i];
+			document.getElementById(id).style.backgroundColor = tc[i];
+			document.getElementById(id).style.borderColor = tc[i];
+			i = 0;
+			setTimeout(function() {tags(t,i,tc,id)}, 3000);
 		  }
 		}
 </script>
