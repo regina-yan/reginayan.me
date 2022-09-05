@@ -4,7 +4,7 @@
 	<title>Regina | SuperBill</title>
 	<link rel="stylesheet" type="text/css" href="../assets/main.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
 	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
@@ -38,15 +38,20 @@
 	<div class="container_summary">
 		<div class="section_summary">
 			<div class="caption_container">
-				<img class="summary_image shadow" src="../assets/superbill.png"/>
+				<img class="summary_image shadow" src="../assets/superbill-landing.png"/>
 			</div>
 		</div>
 		<div class="section_summary_text">
 			<div class="summary_title">SuperBill</div>
 			<br/>
 			<div class="summary_description"> 
-				I haven't finished writing this part yet! Nothing to see here!
-				</br> 
+				After our first project, Haven, failed to take off, my two friends and I pivoted to another idea: SuperBill. 
+				</br> </br> 
+				SuperBill was inspired by the all-too-familiar pain of dealing with insurance companies. We lose crazy amounts of money (or waste crazy amount of time) trying to request reimbursement from insurance companies because they're just so hard to file and fight. 
+			</br></br>
+				<b>With SuperBill, getting reimbursed for out-of-network services is easy.</b> You give us the bills, and we get you the checks. SuperBill verifies patient benefits, files and tracks claims, and fights on the user's behalf. That's power to the patient!
+			</br>
+				<a href="https://www.thesuperbill.com/" target="_blank" class="button_primary">Visit Superbill <i class="fas fa-external-link-square-alt"></i></a>
 			</div>
 			<a href="#container_content"><button class="button_circle_arrow" >
 				<i class="fas fa-arrow-down"></i>			
@@ -56,12 +61,95 @@
     <div id="container_content" style="padding-top: 150px;"></div>
 	<div class="container_content_stack vertical">
 
-			<!-- <div class="card_title">User Research</div>
-			<div class="content_text">
-                (spoiler, there's a lot of it)
-            </div> -->
+	<div class="card_title">Market Research</div>
+	<div class="content_text">
+		Sam and Harrison handled the market research and looked into the viability of an application that would file your medical bills in exchange for a percentage of the reimbursement, or a for a flat fee. We spent months gathering information about patients' frustrations with and workarounds for the complicated insurance system, and providers' willingness to incorporate SuperBill into their processes.
+	</div>
+	<div class="card_title">UX Research</div>
+	<div class="content_text">
+		I spent time doing both user research to answer "what might the ideal bill filing process look like for patients" (spoiler: the answer is "the fewer steps the better"), and "what tools might a provider need to send bills to insurance companies" (so the reimbursement can go directly to the patient in a streamlined manner).
+	</br></br>
+		I also spent time looking at competitor apps and websites in the healthcare industry, and compared their products to what we learned from users. We ended up deciding we wanted our app to accomplish the following things:
+</br></br>
+		1. Predict how much patients can get reimbursed
+</br>
+		Users are hesitant to pay money for services that aren't clear on how much value they'll provide. We decided to build out a tool that would take a patient's high-level insurance information and deliver a savings estimate.
+	</br></br>
+		2. Don't overcomplicate the app
+	</br>
+		Simple does it -- everyone is so busy these days and the last thing they need is extra overhead. We want to make the bill-upload experience simple for users (as close to one-click drag & drop as possible, or even a simple email forwarding). We want to simplify the bill tracking lifecycle to be easy to understand (it's either pending, approved, or reimbursed). We want to make a simple portal for providers who partner with SuperBill to upload bills on behalf of their patients (so the patients themselves don't need to do anything, and the providers don't feel like they have to do "extra work").
+	</div>
             
-		<br>
+	
+		<div class="card_title">Mockups</div>
+	<div class="content_text">
+		We'll skip to higher-fidelity mockups -- while I started with low-fi mockups, I found that hi-fi mockups naturally came earlier and earlier in the process as we had better clarity on what we needed to accomplish. I'd summarize the UX processes as "pragmatic"
+	</br></br>
+		Provider portal ideas
+	<div class="container_sideBySide"> 
+			<div class="sideBySideItem width_50">
+					<img class="summary_image" src="../assets/superbill-1.png"/>
+			</div>
+			<div class="sideBySideItem width_50 sideBySideItem_isLast">
+					<img class="summary_image" src="../assets/superbill-2.png"/>
+			</div>
+		</div>
+	<div class="container_sideBySide"> 
+			<div class="sideBySideItem width_50">
+					<img class="summary_image" src="../assets/superbill-3.png"/>
+			</div>
+			<div class="sideBySideItem width_50 sideBySideItem_isLast">
+					<img class="summary_image" src="../assets/superbill-44.png"/>
+			</div>
+		</div>
+	</br></br>
+	Savings Estimation
+</br></br>
+	<div class="container_sideBySide"> 
+			<div class="sideBySideItem width_50">
+					<img class="summary_image" src="../assets/superbill-4.png"/>
+			</div>
+			<div class="sideBySideItem width_50 sideBySideItem_isLast">
+					<img class="summary_image" src="../assets/superbill-5.png"/>
+			</div>
+		</div>
+
+	</br></br>
+	Landing Page
+</br></br>
+	<img class="summary_image" src="../assets/superbill-landing-page.png"/>
+	</div>
+	<div class="card_title">Marketing & Illustrations</div>
+	<div class="content_text">
+		As part of our sales and marketing efforts, I made a handful of illustrations for use on our platform and social media. Here are a few:
+	</br></br>
+	<div class="container_sideBySide"> 
+			<div class="sideBySideItem width_25">
+					<img class="summary_image" src="../assets/sd-1.png"/>
+			</div>
+			<div class="sideBySideItem width_25">
+					<img class="summary_image" src="../assets/sd-2.png"/>
+			</div>
+			<div class="sideBySideItem width_25">
+					<img class="summary_image" src="../assets/sd-5.png"/>
+			</div>
+			<div class="sideBySideItem width_25 sideBySideItem_isLast">
+					<img class="summary_image" src="../assets/sd-6.png"/>
+			</div>
+		</div>
+		<div class="container_sideBySide"> 
+				<div class="sideBySideItem width_33">
+						<img class="summary_image" src="../assets/sd-7.png"/>
+				</div>
+				<div class="sideBySideItem width_33">
+						<img class="summary_image" src="../assets/sd-8.png"/>
+				</div>
+				<div class="sideBySideItem width_33 sideBySideItem_isLast">
+						<img class="summary_image" src="../assets/sd-9.png"/>
+				</div>
+			</div>
+	</div>
+	<br>
 		<div class="border"></div>
 			<div class="container_sideBySide"> 
 					<div class="sideBySideItem width_50">
