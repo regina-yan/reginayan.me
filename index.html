@@ -48,40 +48,93 @@
 				This site is under construction during <p id="month" style="display:inline"></p> <p id="year" style="display:inline"></p> (devs, there are bugs! UXDs, shield your eyes!) but write-ups will be written and code will be coded soon!
 			</div>
 		</div>
+		<div class="fadeIn" style="visibility:hidden" id="delay3">
+			<div class="category fadeIn" >
+				<div class="category_title">Featured Projects</div>
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+		</div>
 		
 	</div>
-	<div class="content">
-		<div class="category">
-			<div class="category_title">Featured Projects</div>
-		</div>
-	<div class="container_cards featured">
-		<a href="projects/metro.html" class="card_full">
+	<div class="content" id="container_content">
+	<div class="container_cards featured fadeIn" style="visibility:hidden" id="delay2">
+		<a href="projects/appian.html" class="card_full">
 			<div class="container_sideBySide">
 				<div class="sideBySideItem width_50">
-					<img class="card_image_full" src="assets/metro-cover.jpg"/>
-				</div>
-				<div class="sideBySideItem width_50">
-					<div class="card_title">Featured project</div>
-					<div class="card_description">Pretend this section doesn't exist - I'm deciding what to put here!</div>
-				</div>
-			</div>
-		</a>
-		<a href="projects/metro.html" class="card_full">
-			<div class="container_sideBySide">
-				<div class="sideBySideItem width_50">
-					<img class="card_image_full" src="assets/metro-cover.jpg"/>
+					<img class="card_image_full" src="assets/appian-2.png"/>
 				</div>
 				<div class="sideBySideItem width_50 relative">
-					<div class="card_title">Recruiters, ignore this too!</div>
-					<div class="card_description">In progress! In progress!
+					<div class="card_title">Appian</div>
+					<div class="card_description">Designing features for the platform's DevOps capabilities, advocating for UX best practices on Customer Success projects, and leading a pretty cool product illustration team
 					</div>
 					<div class="card_tag_container_relative">
-							<div class="card_tag web">Wordpress</div>
 							<div class="card_tag ux">UX/UI</div>
 						</div>
 				</div>
 			</div>
-		</a>									
+		</a>
+		<a href="projects/dartmouthdays.html" class="card_full">
+			<div class="container_sideBySide">
+				<div class="sideBySideItem width_50">
+					<img class="card_image_full" src="assets/dartmouth-cover.png"/>
+				</div>
+				<div class="sideBySideItem width_50 relative">
+					<div class="card_title">Dartmouth Days</div>
+					<div class="card_description">A series of illustrations that reflect on the four most formative years of my life</div>
+					<div class="card_tag_container_relative">
+							<div class="card_tag illustrator">Illustrator</div>
+						</div>
+				</div>
+			</div>
+		</a>
+		<a href="projects/viva.html" class="card_full">
+			<div class="container_sideBySide">
+				<div class="sideBySideItem width_50">
+					<img class="card_image_full" src="assets/viva-basket.png"/>
+				</div>
+				<div class="sideBySideItem width_50 relative">
+					<div class="card_title">Viva Raw</div>
+					<div class="card_description">Packaging design and branding for a healthy, fresh raw pet food company</div>
+					<div class="card_tag_container_relative">
+							<div class="card_tag illustrator">Illustrator</div>
+					<div class="card_tag branding">Branding</div>
+						</div>
+				</div>
+			</div>
+		</a>
+		<a href="projects/climbingwall.html" class="card_full">
+			<div class="container_sideBySide">
+				<div class="sideBySideItem width_50">
+					<img class="card_image_full" src="assets/climbingwall-cover.jpg"/>
+				</div>
+				<div class="sideBySideItem width_50 relative">
+					<div class="card_title">Climbing Wall</div>
+					<div class="card_description">The hardest thing I've ever done and the proudest I've ever been! My personal free-standing woody</div>
+					<div class="card_tag_container_relative">
+							<div class="card_tag painting">Painting</div>
+					<div class="card_tag wood">Wood</div>
+						</div>
+				</div>
+			</div>
+		</a>	
+		<a href="projects/ecg.html" class="card_full">
+			<div class="container_sideBySide">
+				<div class="sideBySideItem width_50">
+					<img class="card_image_full" src="assets/ecg-cover.png"/>
+				</div>
+				<div class="sideBySideItem width_50 relative">
+					<div class="card_title">Biking the East Coast Greenway</div>
+					<div class="card_description">What do you get when you mix a month-long vacation opportunity with a budding cyclist going through a quarter-life crisis? A solo bikepacking trip down the East Coast!</div>
+					<div class="card_tag_container_relative">
+							<div class="card_tag biking">Biking</div>
+								<div class="card_tag film">Film</div>
+						</div>
+				</div>
+			</div>
+		</a>
+		<div style="padding:30px"></div>
 	</div>
 </div>
 	</div>
@@ -130,8 +183,14 @@
 		var textColor2 = ['#f1a7a7', '#9adb84', '#859bff'];
 		var text2 = ['women in tech', 'sustainability', 'inclusivity in the outdoors'];
 		const fadeIn = document.getElementById('delay');
+		const fadeIn2 = document.getElementById('delay2');
+		const fadeIn3 = document.getElementById('delay3');
 		setTimeout(() => {
 		fadeIn.style.visibility = 'visible';}, 10); 
+		setTimeout(() => {
+		fadeIn2.style.visibility = 'visible';}, 10); 
+		setTimeout(() => {
+		fadeIn3.style.visibility = 'visible';}, 10); 
 		
 		
 		
