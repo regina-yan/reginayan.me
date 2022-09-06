@@ -1031,6 +1031,9 @@ header::after{
 		.section_title{
 			font-size: 2.5rem;
 		}
+		.category_image{
+			height: auto;
+		}
 		.category_subtitle{
 			font-size: 2.5rem;
 			padding-right: 30px;
@@ -1038,12 +1041,21 @@ header::after{
 		.category_title{
 			font-size: 4.5rem;
 		}
+		.category_title.index{
+			position: absolute;
+			bottom: 100px;
+		}
 		.card_category_title{
 			font-size: 2rem;
 		}
-		.index{
-			font-size: 2rem;
+		.category.fadeIn{
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
+		/* .index{
+			font-size: 2rem;
+		} */
 		.stackPhone{
 			display: block;
 			margin-top: 5%;
@@ -1051,47 +1063,33 @@ header::after{
 		.site_title_container{
 			width: 100%;
 			flex-direction: column;
-			padding-top: 8vh;
-			padding-bottom: 3vh;
+			padding-top: 10vh;
+			padding-bottom: 5vh;
 		}
 		.category.fadeIn{
 			margin-bottom: 0;
 		}
-		.button_circle_arrow.index{
-			background-color: var(--button-color);
-	border-radius: 32px;
-	border: none;
-	display: inline-block;
-	width: 56px;
-	height: 56px;
-	font-size: 1.2em;
-	color: white;
-	margin: 5px;
-	position: relative;
-	bottom: -32px;
-	left: calc(50% - 28px);
-	transition: all .15s ease-in-out;
-		}
 		.site_title{
 			color: #1a1a1a;
 			margin-left: 0;
+			font-size: 4rem;
 		}
 		.card_category_description{
-			font-size: 1rem;
+			font-size: 1.4rem;
 		}
 		.card_description{
 			font-size: 2.2rem;
 		}
-		.card_description.index{
+		/* .card_description.index{
 			font-size: 1rem;
-		}
+		} */
 		.content_text{
-			font-size: 1.8rem;
-			display: flex;
+			font-size: 1.4rem;
+			/* display: flex; */
 			flex-direction: column;
 		}
 		.content_text_no_margin{
-			font-size: 1.8rem;
+			font-size: 2.5rem;
 		}
 		.image_text{
 			font-size: 1.4rem;
@@ -1112,7 +1110,9 @@ header::after{
 			margin-bottom: 5%;
 		}
 		.card_full{
-			height: 65vh;
+			height: 55vh;
+			border-color: #8c8c8c;
+			margin-bottom: 5%;
 		}
 		.card_image{
 			height: 400px;
@@ -1121,16 +1121,16 @@ header::after{
 			height: 35vh;
 		}
 		.relative{
-			height: 30vh;
+			height: 20vh;
 		}
 		.card_title{
 			font-size: 3.2rem;
 			padding-bottom: 2%;
 		}
-		.card_title.index{
+		/* .card_title.index{
 			font-size: 1.8rem;
 			padding-bottom: 2%;
-		}
+		} */
 		.card_tag_container{
 			font-size: 3rem;
 		}
@@ -1152,19 +1152,19 @@ header::after{
 			left: calc(50% - 60px);
 		}
 		.card_tag{
-			/* font-size: 2rem; */
-			padding: 3px;
+			font-size: 2rem;
+			/* padding: 3px; */
 		}
 		.button_secondary{
 			font-size: 2rem;
 			padding: 30px;
-			-webkit-appearance: none;
+			-webkit-appearance: button;
 			/* position: absolute; */
 		}
 		.button_primary{
 			font-size: 2rem;
 			padding: 30px;
-			-webkit-appearance: none;
+			-webkit-appearance: button;
 			/* position: absolute; */
 		}
 		
@@ -1178,7 +1178,7 @@ header::after{
 		}
 		.summary_description{
 			font-size: 30px;
-			font-size: 1.4rem;
+			font-size: 1.8rem;
 		}
 		.parallax{
 			background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
@@ -1193,9 +1193,10 @@ header::after{
 			width: 100%;
 		}
 		.fadeIn{
-			font-size: 1.3em;
+			font-size: 2.3em;
 			margin-right: 0 !important;
 			padding-right: 0;
+			max-width: 100%;
 		}
 	.card_category{
 		width: 80%;
@@ -1205,8 +1206,20 @@ header::after{
 		width: 80%;
 		font-size: 1.4rem;
 	}
+	.width_33{
+		width: 100%;
+	}
+	.width_66{
+		width: 100%;
+	}
+	.width_25{
+		width: 48%;
+	}
 		.width_50{
 		width: 100%
+	}
+	.fixed{
+		width: 48%;
 	}
 	.single-table {
 		width: 100%;
@@ -1218,16 +1231,32 @@ header::after{
 	.container_summary_short{
 		flex-wrap: wrap;
 	}
+	.container_content_stack{
+		width: 100%;
+	}
+	.vertical{
+		max-width: calc(100vw - 100px);
+		/* margin-left: 3%; */
+		/* margin-right: 3%; */
+	}
 	.section_summary{
 		width: 100%
 	}
 	.section_summary_text{
 		width: 100%
 	}
+	.logo{
+		height: 80px;
+	}
 	header.container{
 		/* width: 100px !important; */
-		font-size: 2rem;
+		font-size: 3rem;
 		padding-right: 3%;
+		margin-right: 0;
+	}
+	.tiny{
+		max-width: fit-content;
+		max-height: 300px;
 	}
 	.topnav a {
 		display: none;}
@@ -1246,7 +1275,7 @@ header::after{
 	  position: absolute;
 	  right: 0;
 	  top: 0;
-	  font-size: 2rem;
+	  font-size: 3rem;
 	}
 	.topnav.responsive a {
 		position: relative;
@@ -1255,7 +1284,7 @@ header::after{
 	  display: block;
 	  text-align: left;
 	  border-bottom-color: white;
-	  font-size: 1.3rem;
+	  font-size: 2.3rem;
 	}
 	.logo.responsiveLogo {
 		display: none;
