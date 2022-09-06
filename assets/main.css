@@ -574,6 +574,7 @@ h3{
 	  width: 70%;
   }
 
+
 /* Page */
 .container_summary{
 	max-width: 1200px;
@@ -1025,13 +1026,8 @@ header::after{
 	display: inline-block;
 }
   @media only screen 
-	/* and (min-device-width: 375px)  */
-	/* and (max-device-width: 667px)  */
 	and (max-device-width: 768px) 
 	and (-webkit-min-device-pixel-ratio: 2) { 
-		header.container{
-			font-size: 2.5rem;
-		}
 		.section_title{
 			font-size: 2.5rem;
 		}
@@ -1045,14 +1041,54 @@ header::after{
 		.card_category_title{
 			font-size: 2rem;
 		}
+		.index{
+			font-size: 2rem;
+		}
+		.stackPhone{
+			display: block;
+			margin-top: 5%;
+		}
+		.site_title_container{
+			width: 100%;
+			flex-direction: column;
+			padding-top: 8vh;
+			padding-bottom: 3vh;
+		}
+		.category.fadeIn{
+			margin-bottom: 0;
+		}
+		.button_circle_arrow.index{
+			background-color: var(--button-color);
+	border-radius: 32px;
+	border: none;
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	font-size: 1.2em;
+	color: white;
+	margin: 5px;
+	position: relative;
+	bottom: -32px;
+	left: calc(50% - 28px);
+	transition: all .15s ease-in-out;
+		}
+		.site_title{
+			color: #1a1a1a;
+			margin-left: 0;
+		}
 		.card_category_description{
 			font-size: 1rem;
 		}
 		.card_description{
 			font-size: 2.2rem;
 		}
+		.card_description.index{
+			font-size: 1rem;
+		}
 		.content_text{
 			font-size: 1.8rem;
+			display: flex;
+			flex-direction: column;
 		}
 		.content_text_no_margin{
 			font-size: 1.8rem;
@@ -1072,12 +1108,34 @@ header::after{
 		}
 		.card{
 			height: 800px;
+			border-color: #8c8c8c;
+			margin-bottom: 5%;
+		}
+		.card_full{
+			height: 65vh;
 		}
 		.card_image{
 			height: 400px;
 		}
+		.card_image_full{
+			height: 35vh;
+		}
+		.relative{
+			height: 30vh;
+		}
 		.card_title{
-			font-size: 2.5rem;
+			font-size: 3.2rem;
+			padding-bottom: 2%;
+		}
+		.card_title.index{
+			font-size: 1.8rem;
+			padding-bottom: 2%;
+		}
+		.card_tag_container{
+			font-size: 3rem;
+		}
+		.card_tag_container_relative{
+			left: 0%;
 		}
 		.button_circle{
 			width: 120px;
@@ -1094,23 +1152,25 @@ header::after{
 			left: calc(50% - 60px);
 		}
 		.card_tag{
-			font-size: 2rem;
-			padding: 10px;
+			/* font-size: 2rem; */
+			padding: 3px;
 		}
 		.button_secondary{
 			font-size: 2rem;
 			padding: 30px;
 			-webkit-appearance: none;
+			/* position: absolute; */
 		}
 		.button_primary{
 			font-size: 2rem;
 			padding: 30px;
 			-webkit-appearance: none;
+			/* position: absolute; */
 		}
 		
 		.footer{
-			font-size: 1.25rem;
-			/* display: block; */
+			font-size: 1rem;
+			flex-wrap: wrap;
 		}
 		.summary_title{
 			font-size: 3rem;
@@ -1123,9 +1183,19 @@ header::after{
 		.parallax{
 			background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
 			url("heroshot.jpg");
+			display: block;
+			justify-content: center;
+			/* width: 100vw; */
+			padding-left: 4%;
+			padding-right: 4%;
 		}
 		.halfwidth{
 			width: 100%;
+		}
+		.fadeIn{
+			font-size: 1.3em;
+			margin-right: 0 !important;
+			padding-right: 0;
 		}
 	.card_category{
 		width: 80%;
@@ -1143,6 +1213,7 @@ header::after{
 	}
 	.container_summary{
 		flex-wrap: wrap;
+		min-height: 0;
 	}
 	.container_summary_short{
 		flex-wrap: wrap;
@@ -1154,7 +1225,9 @@ header::after{
 		width: 100%
 	}
 	header.container{
-		width: 100%;
+		/* width: 100px !important; */
+		font-size: 2rem;
+		padding-right: 3%;
 	}
 	.topnav a {
 		display: none;}
@@ -1173,6 +1246,7 @@ header::after{
 	  position: absolute;
 	  right: 0;
 	  top: 0;
+	  font-size: 2rem;
 	}
 	.topnav.responsive a {
 		position: relative;
@@ -1181,9 +1255,13 @@ header::after{
 	  display: block;
 	  text-align: left;
 	  border-bottom-color: white;
+	  font-size: 1.3rem;
 	}
 	.logo.responsiveLogo {
 		display: none;
+	}
+	.sideBySideItem_isLast{
+		padding-right: 2%;
 	}
   }
   
