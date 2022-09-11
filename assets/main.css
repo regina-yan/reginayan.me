@@ -1,6 +1,6 @@
 :root{
 	--text-header-color: #0D0D0D;
-	--text-color: #747474;
+	--text-color: #454545;
 	--divider-color: #0D0D0D;
 	--button-color:#0D0D0D;
 	--button-hover-color: #5C5C5C;
@@ -11,6 +11,7 @@
 	--tag-background: #b6e3d5;
 	--card-background: #e9f5f4;
 	--card-hover: #f6f6f6;
+	--body-font: DM Sans;
 }
 html{
 	height: 100%;
@@ -149,6 +150,9 @@ h3{
 .padding_nav{
 	padding-top: 120px
 }
+.padding_resume{
+	padding-top: 60px
+}
 .content{
 	width: 95%;
 	margin: 0 auto;
@@ -185,6 +189,9 @@ h3{
 }
 .halfwidth{
 	width: 50%
+}
+.no_margin{
+	margin: 0 !important;
 }
 .parallax_category{
 	/* The image used */
@@ -248,7 +255,7 @@ h3{
 .category_subtitle{
 	font-weight: 400;
 	font-size: 20px;
-	font-family: Source Sans Pro, sans-serif;
+	font-family: var(--body-font), sans-serif;
 	color: white;
 }
 .inline_tag{
@@ -369,7 +376,7 @@ h3{
 	color: var(--text-header-color);
 }
 .card_category_description{
-	font-family: Source Sans Pro, sans-serif;
+	font-family: var(--body-font), sans-serif;
 	font-size: 14px;
 	color: var(--text-color);
 	/* color: #747474; */
@@ -399,7 +406,7 @@ h3{
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    font-family: sans-serif;
+    font-family: var(--body-font), sans-serif;
     min-width: 400px;
     box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 15%)
 }
@@ -432,7 +439,7 @@ h3{
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    font-family: sans-serif;
+    font-family: var(--body-font), sans-serif;
     min-width: 400px;
     /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
 }
@@ -458,7 +465,7 @@ h3{
 	color: var(--text-header-color);
 }
 .card_description{
-	font-family: Source Sans Pro, sans-serif;
+	font-family: var(--body-font), sans-serif;
 	font-size: 14px;
 	/* color: #747474; */
 }
@@ -649,13 +656,13 @@ h3{
 	font-size: 0.7em;
 }
 .content_text{
-	font-family: Source Sans Pro;
+	font-family: var(--body-font);
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 15px;
 	margin-bottom: 30px;
 }
 .content_text_no_margin{
-	font-family: Source Sans Pro;
+	font-family: var(--body-font);
 	font-weight: 300;
 	font-size: 18px;
 }
@@ -689,18 +696,17 @@ h3{
 	color: var(--text-header-color);
 }
 .summary_description{
-	font-family: Source Sans Pro;
+	font-family: var(--body-font);
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 17px;
 	margin-bottom: 58px;
-	/* color: #747474; */
 }
 .summary_intro{
 	font-style: italic;
 }
 .image_text{
 	font-size: 14px;
-	font-family: Source Sans Pro, sans-serif;
+	font-family: var(--body-font), sans-serif;
 	margin-top: -25px;
 	margin-bottom: 30px;
 }
@@ -732,6 +738,19 @@ h3{
 	border-radius: 6px;
 	background-color: var(--card-hover);
 	padding: 20% 5%;
+	/* margin-top: 150px; */
+	/* height: calc(100vh - 150px); */
+}
+.container_content_wrapper_resume{
+	width: 85%;
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 6px;
+	background-color: var(--card-hover);
+	padding: 5% 5%;
 	/* margin-top: 150px; */
 	/* height: calc(100vh - 150px); */
 }
@@ -804,6 +823,7 @@ h3{
 	color: var(--highlight-color);
 	margin: 15px 15px 0 0;
 	transition: all .15s ease-in-out;
+	max-height: 200px;
 }
 .button_secondary:hover{
 	-webkit-appearance: button;
@@ -859,7 +879,7 @@ button:focus{
 	color: var(--text-header-color);
 }
 .caption_description{
-	font-family: Source Sans Pro, sans-serif;
+	font-family: var(--body-font), sans-serif;
 	font-size: 18px;
 	/* color: #747474; */
 }
@@ -882,6 +902,7 @@ button:focus{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	width: 100%;
 }
 .sideBySide_minimize{
 	flex-basis: fit-content;
@@ -891,6 +912,10 @@ button:focus{
 }
 .sideBySideItem_isLast{
 	padding-right: 0%;
+}
+.sideBySideItem_alignEnd{
+	display: flex;
+	justify-content: flex-end;
 }
 .width_25{
 	width: 22%;
@@ -909,7 +934,7 @@ button:focus{
 }
 input{
 	border: none;
-	font-family: Source Sans Pro;
+	font-family: var(--body-font);
 	font-size: 18px;
 	margin: auto;
 	margin-top: 10px;
@@ -925,7 +950,7 @@ input[type=submit]{
 }
 textarea{
 	border: none;
-	font-family: Source Sans Pro;
+	font-family: var(--body-font);
 	font-size: 18px;
 	margin-top: 10px;
 	width: 98%;
@@ -1169,7 +1194,7 @@ header::after{
 		}
 		
 		.footer{
-			font-size: 1rem;
+			font-size: 2rem;
 			flex-wrap: wrap;
 		}
 		.summary_title{
