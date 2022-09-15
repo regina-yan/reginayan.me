@@ -271,7 +271,6 @@ h3{
 	white-space: nowrap;
 	font-size: 0.8em;
 	font-family: "Cabin";
-	animation: fade 3000ms infinite;
 }
 .offset{
 	animation: offset_fade 3s infinite;

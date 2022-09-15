@@ -209,16 +209,29 @@
 			setTimeout(typeWriter, speed);
 			}
 		};
+		function unfade(element) {
+    		var op = 0.1;  // initial opacity
+    		element.style.display = 'inline';
+    		var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        	element.style.opacity = op;
+        	element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        	op += op * 0.1;
+		}, 10);
+}
 		function tags(t, i, tc, id, s) {
 			console.log(t.length);
 		  if (i < t.length-1) {
+			unfade(document.getElementById(id));
 			document.getElementById(id).innerHTML = t[i];
 			document.getElementById(id).style.backgroundColor = tc[i];
 			document.getElementById(id).style.borderColor = tc[i];
 			i++;
 			setTimeout(function() {tags(t,i,tc,id)}, 3000);
 		  } else {
-			console.log("there"),
+			unfade(document.getElementById(id));
 			document.getElementById(id).innerHTML = t[i];
 			document.getElementById(id).style.backgroundColor = tc[i];
 			document.getElementById(id).style.borderColor = tc[i];
@@ -226,6 +239,7 @@
 			setTimeout(function() {tags(t,i,tc,id)}, 3000);
 		  }
 		}
+
 </script>
 
 </html>
