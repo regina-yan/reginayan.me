@@ -169,11 +169,14 @@
 
 
 <div class="footer">
-        Regina Yan © 2021
-        <div>
-            <i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
-        </div>
-    </div>
+	<div>
+		Regina Yan © 
+		<p id="year" style="display:inline">2023</p>
+	</div>
+	<div>
+		<i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+	</div>
+</div>
 
 </body>
 <script type="text/javascript">
@@ -189,4 +192,7 @@
 		}
 	}
 </script>
+<script>
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
 </html>
