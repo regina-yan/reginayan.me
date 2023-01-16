@@ -11,7 +11,7 @@
 	--tag-background: #b6e3d5;
 	--card-background: #e9f5f4;
 	--card-hover: #f6f6f6;
-	--body-font: DM Sans;
+	--body-font: Lato;
 }
 html{
 	height: 100%;
@@ -466,6 +466,7 @@ h3{
 .card_description{
 	font-family: var(--body-font), sans-serif;
 	font-size: 14px;
+	font-weight: 300;
 	/* color: #747474; */
 }
 .card_tag_container{
