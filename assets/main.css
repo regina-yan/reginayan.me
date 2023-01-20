@@ -11,8 +11,34 @@
 	--tag-background: #b6e3d5;
 	--card-background: #e9f5f4;
 	--card-hover: #f6f6f6;
-	--body-font: Lato;
-	--display-font: Cabin;
+	--body-font: Source Sans Pro;
+	--display-font: Strawford;
+}
+@font-face {
+    font-family: 'strawfordregular';
+    src: url('strawford-regular-webfont.eot');
+    src: url('strawford-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('strawford-regular-webfont.woff2') format('woff2'),
+         url('strawford-regular-webfont.woff') format('woff'),
+         url('strawford-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'strawfordregular_italic';
+    src: url('strawford-regularitalic-webfont.eot');
+    src: url('strawford-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('strawford-regularitalic-webfont.woff2') format('woff2'),
+         url('strawford-regularitalic-webfont.woff') format('woff'),
+         url('strawford-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 html{
 	height: 100%;
@@ -20,7 +46,7 @@ html{
 }
 body{
 	font-family: var(--display-font), sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-style: regular;
 	color: var(--text-color);
 	margin:	0 auto;
@@ -49,6 +75,9 @@ a:hover{
 }
 b{
 	color: var(--text-header-color);
+	font-weight: 400;
+}
+strong{
 	font-weight: 600;
 }
 .outerr{
@@ -668,7 +697,7 @@ h3{
 }
 .content_text_no_margin{
 	font-family: var(--body-font);
-	font-weight: 300;
+	/* font-weight: 300; */
 	font-size: 18px;
 }
 .description_ul{
@@ -784,7 +813,7 @@ h3{
 }
 .navigation{
 	color: var(--text-header-color);
-	font-weight: 700;
+	font-weight: 400;
 }
 .navigation:hover{
 	text-decoration: none;
