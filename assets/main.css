@@ -12,7 +12,7 @@
 	--card-background: #e9f5f4;
 	--card-hover: #f6f6f6;
 	--body-font: Source Sans Pro;
-	--display-font: Strawford;
+	--display-font: handwriting;
 }
 @font-face {
     font-family: 'strawfordregular';
@@ -26,9 +26,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'strawfordregular_italic';
     src: url('strawford-regularitalic-webfont.eot');
@@ -40,6 +37,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'handwriting';
+    src: url('Handwriting-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html{
 	height: 100%;
 	scroll-behavior: smooth;
@@ -71,6 +76,7 @@ a:hover{
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	font-size: 1.2em;
 	
 }
 b{
@@ -255,6 +261,8 @@ h3{
 	font-weight: 700;
 	font-size: 36px;
 	color: black;
+	text-transform: uppercase;
+	margin-top: 15px;
 }
 .site_title_container{
 	display: flex;
@@ -400,9 +408,10 @@ h3{
   }
 .card_category_title{
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 22px;
 	font-family: var(--display-font), sans-serif;
 	color: var(--text-header-color);
+	text-transform: uppercase;
 }
 .card_category_description{
 	font-family: var(--body-font), sans-serif;
@@ -490,8 +499,9 @@ h3{
 
 .card_title{
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 22px;
 	color: var(--text-header-color);
+	text-transform: uppercase;
 }
 .card_description{
 	font-family: var(--body-font), sans-serif;
@@ -931,6 +941,7 @@ button:focus{
 	padding-bottom: 15px;
 	display: flex;
 	align-items: center;
+	text-transform: uppercase;
 }
 .container_sideBySide{
 	display: flex;
@@ -1043,6 +1054,7 @@ textarea:focus{
 	  border-bottom: 1.5px solid transparent;
 	  transition: border-bottom-color 250ms;
 	  margin-right: 15px;
+	  font-size: 16pt;
   }
   
   .topnav a:(not icon) hover {
