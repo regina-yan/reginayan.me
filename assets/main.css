@@ -270,7 +270,7 @@ h3{
 	width: fit-content;
 }
 .site_title{
-	font-weight: 700;
+	/* font-weight: 700; */
 	font-size: 50px;
 	color: white;  
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -302,12 +302,12 @@ h3{
 	border-radius: 3px;
 	border: 2px solid var(--highlight-color);
 	display: inline-block;
-	padding: .5%;
+	padding: 1% 2% 0.5% 2%;
 	text-transform: uppercase;
 	color: white;
 	font-weight: 700;
 	white-space: nowrap;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-family: var(--display-font);
 }
 .offset{
@@ -528,14 +528,14 @@ h3{
 	border-radius: 3px;
 	border: 2px solid var(--tag-background);
 	display: inline-block;
-	padding: .5% 2%;
+	padding: 1% 2% 0.5% 2%;
 	margin-right: 2%;
 	text-transform: uppercase;
 	color: white;
 	font-weight: 700;
 	white-space: nowrap;
 	margin-top: 2%;
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 .punchneedle{
 	border: 2px solid #c0abf5;
