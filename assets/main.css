@@ -259,7 +259,7 @@ h3{
 }
 .category_title{
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 40px;
 	color: black;
 	text-transform: uppercase;
 	margin-top: 15px;
@@ -271,7 +271,7 @@ h3{
 }
 .site_title{
 	/* font-weight: 700; */
-	font-size: 50px;
+	font-size: 60px;
 	color: white;  
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
   	border-right: .1em solid var(--highlight-color); /* The typwriter cursor */
@@ -302,12 +302,12 @@ h3{
 	border-radius: 3px;
 	border: 2px solid var(--highlight-color);
 	display: inline-block;
-	padding: 1% 2% 0.5% 2%;
+	padding: 0.5% 1% 0% 1%;
 	text-transform: uppercase;
 	color: white;
 	font-weight: 700;
 	white-space: nowrap;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	font-family: var(--display-font);
 }
 .offset{
@@ -408,7 +408,7 @@ h3{
   }
 .card_category_title{
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 28px;
 	font-family: var(--display-font), sans-serif;
 	color: var(--text-header-color);
 	text-transform: uppercase;
@@ -499,7 +499,7 @@ h3{
 
 .card_title{
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 28px;
 	color: var(--text-header-color);
 	text-transform: uppercase;
 }
@@ -836,7 +836,7 @@ h3{
     appearance: button;
 	border-radius: 7px;
 	padding: 10px;
-	font-size: 15px;
+	font-size: 18px;
 	font-family: var(--display-font), sans-serif;
 	text-transform: uppercase;
 	border: 2px solid var(--highlight-color);
@@ -844,6 +844,7 @@ h3{
 	color: white;
 	margin: 15px 15px 0 0;
 	transition: all .15s ease-in-out;
+	font-weight: 700;
 }
 .button_primary:hover{
 	-webkit-appearance: button;
@@ -859,7 +860,7 @@ h3{
     appearance: button;
 	border-radius: 7px;
 	padding: 10px;
-	font-size: 15px;
+	font-size: 18px;
 	font-family: var(--display-font), sans-serif;
 	text-transform: uppercase;
 	border: 2px solid var(--highlight-color);
@@ -868,6 +869,7 @@ h3{
 	margin: 15px 15px 0 0;
 	transition: all .15s ease-in-out;
 	max-height: 200px;
+	font-weight: 700;
 }
 .button_secondary:hover{
 	-webkit-appearance: button;
@@ -887,6 +889,7 @@ h3{
 	color: white;
 	margin: 5px;
 	transition: all .15s ease-in-out;
+	cursor: pointer;
 }
 .button_circle:hover, .button_circle_arrow:hover{
 	background-color: var(--button-hover-color);
@@ -905,6 +908,7 @@ h3{
 	bottom: -32px;
 	left: calc(50% - 28px);
 	transition: all .15s ease-in-out;
+	cursor: pointer;
 }
 button:focus{
 	outline: none;
@@ -935,7 +939,7 @@ button:focus{
 }
 .section_title{
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 28px;
 	font-family: var(--display-font), sans-serif;
 	color: var(--text-header-color);
 	padding-bottom: 15px;
@@ -1054,7 +1058,7 @@ textarea:focus{
 	  border-bottom: 1.5px solid transparent;
 	  transition: border-bottom-color 250ms;
 	  margin-right: 15px;
-	  font-size: 16pt;
+	  font-size: 20pt;
   }
   
   .topnav a:(not icon) hover {
@@ -1117,7 +1121,7 @@ header::after{
 			bottom: 100px;
 		}
 		.card_category_title{
-			font-size: 2rem;
+			font-size: 2.2rem;
 		}
 		.category.fadeIn{
 			display: flex;
@@ -1143,7 +1147,7 @@ header::after{
 		.site_title{
 			color: #1a1a1a;
 			margin-left: 0;
-			font-size: 4rem;
+			font-size: 5rem;
 		}
 		.card_category_description{
 			font-size: 1.4rem;
@@ -1195,7 +1199,7 @@ header::after{
 			height: 20vh;
 		}
 		.card_title{
-			font-size: 3.2rem;
+			font-size: 3.4rem;
 			padding-bottom: 2%;
 		}
 		/* .card_title.index{
