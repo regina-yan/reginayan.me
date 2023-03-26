@@ -259,7 +259,7 @@ h3{
 }
 .category_title{
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 32px;
 	color: black;
 	text-transform: uppercase;
 	margin-top: 15px;
@@ -271,7 +271,7 @@ h3{
 }
 .site_title{
 	/* font-weight: 700; */
-	font-size: 60px;
+	font-size: 48px;
 	color: white;  
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
   	border-right: .1em solid var(--highlight-color); /* The typwriter cursor */
@@ -302,12 +302,12 @@ h3{
 	border-radius: 3px;
 	border: 2px solid var(--highlight-color);
 	display: inline-block;
-	padding: 0.5% 1% 0% 1%;
+	padding: 1% 1% 0% 1%;
 	text-transform: uppercase;
 	color: white;
 	font-weight: 700;
 	white-space: nowrap;
-	font-size: 1.1em;
+	font-size: 0.8em;
 	font-family: var(--display-font);
 }
 .offset{
@@ -408,7 +408,7 @@ h3{
   }
 .card_category_title{
 	font-weight: 700;
-	font-size: 28px;
+	font-size: 20px;
 	font-family: var(--display-font), sans-serif;
 	color: var(--text-header-color);
 	text-transform: uppercase;
@@ -499,7 +499,7 @@ h3{
 
 .card_title{
 	font-weight: 700;
-	font-size: 28px;
+	font-size: 20px;
 	color: var(--text-header-color);
 	text-transform: uppercase;
 }
@@ -528,7 +528,7 @@ h3{
 	border-radius: 3px;
 	border: 2px solid var(--tag-background);
 	display: inline-block;
-	padding: 1% 2% 0.5% 2%;
+	padding: 1% 1% 0% 1%;
 	margin-right: 2%;
 	text-transform: uppercase;
 	color: white;
@@ -736,7 +736,7 @@ h3{
 }
 .summary_title{
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 32px;
 	color: var(--text-header-color);
 }
 .summary_description{
@@ -835,8 +835,8 @@ h3{
     -moz-appearance: button;
     appearance: button;
 	border-radius: 7px;
-	padding: 10px;
-	font-size: 18px;
+	padding: 10px 10px 5px 10px;
+	font-size: 15px;
 	font-family: var(--display-font), sans-serif;
 	text-transform: uppercase;
 	border: 2px solid var(--highlight-color);
@@ -859,8 +859,8 @@ h3{
     -moz-appearance: button;
     appearance: button;
 	border-radius: 7px;
-	padding: 10px;
-	font-size: 18px;
+	padding: 10px 10px 5px 10px;
+	font-size: 15px;
 	font-family: var(--display-font), sans-serif;
 	text-transform: uppercase;
 	border: 2px solid var(--highlight-color);
@@ -923,7 +923,7 @@ button:focus{
 }
 .caption_title{
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 20px;
 	color: var(--text-header-color);
 }
 .caption_description{
@@ -1058,7 +1058,7 @@ textarea:focus{
 	  border-bottom: 1.5px solid transparent;
 	  transition: border-bottom-color 250ms;
 	  margin-right: 15px;
-	  font-size: 20pt;
+	  font-size: 15pt;
   }
   
   .topnav a:(not icon) hover {
