@@ -25,21 +25,37 @@
     font-style: normal;
 
 }
-
 @font-face {
-    font-family: 'strawfordregular_italic';
-    src: url('strawford-regularitalic-webfont.eot');
-    src: url('strawford-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('strawford-regularitalic-webfont.woff2') format('woff2'),
-         url('strawford-regularitalic-webfont.woff') format('woff'),
-         url('strawford-regularitalic-webfont.ttf') format('truetype');
+    font-family: 'handwriting';
+    src: url('Handwriting-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'handwriting';
-    src: url('Handwriting-Regular.ttf') format('truetype');
+    font-family: 'reggie-block';
+    src: url('Reggie_block-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'reggie-3d-plain';
+    src: url('Reggie_3d_plain-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'reggie-3d-fill';
+    src: url('Reggie_3d_fill-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'reggie-3d-dash';
+    src: url('Reggie_3d_dash-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
