@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<div class="head">
+	<div class="head" id="head">
 			<a href="index.html" class="logo" id="logo"></a>
 		<header class="container">
 			<div class="topnav" id="myTopnav">
@@ -182,6 +182,30 @@
 			logo.style.display = "block";
 		}
 	}
+</script>
+<script>
+	var scrollpos = window.scrollY;
+	var header = document.getElementById("head");
+
+	function add_class_on_scroll() {
+		header.classList.add("borderBottom");
+	}
+
+	function remove_class_on_scroll() {
+		header.classList.remove("borderBottom");
+	}
+
+	window.addEventListener('scroll', function(){ 
+		scrollpos = window.scrollY;
+		console.log(scrollpos);
+		if(scrollpos > 20){
+			add_class_on_scroll();
+		}
+		else {
+			remove_class_on_scroll();
+		}
+		console.log(scrollpos);
+	});
 </script>
 <script>
 	document.getElementById("year").innerHTML = new Date().getFullYear();
