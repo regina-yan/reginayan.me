@@ -1137,6 +1137,7 @@ header::after{
 		}
 		.category_title{
 			font-size: 4.5rem;
+			font-weight: 300;
 		}
 		.category_title.index{
 			position: absolute;
@@ -1145,10 +1146,16 @@ header::after{
 		.card_category_title{
 			font-size: 2.2rem;
 		}
+		.inline_tag{
+			font-weight: 300;
+		}
 		.category.fadeIn{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		a.icon{
+			font-size: 3rem;
 		}
 		/* .index{
 			font-size: 2rem;
@@ -1181,7 +1188,7 @@ header::after{
 			font-size: 1rem;
 		} */
 		.content_text{
-			font-size: 1.4rem;
+			font-size: 2.4rem;
 			/* display: flex; */
 			flex-direction: column;
 		}
@@ -1192,10 +1199,10 @@ header::after{
 			font-size: 1.4rem;
 		}
 		.caption_title{
-			font-size: 2rem;
+			font-size: 2.4rem;
 		}
 		.caption_description{
-			font-size: 2rem;
+			font-size: 2.4rem;
 		}
 		.caption_image{
 			width: 75px;
@@ -1223,6 +1230,7 @@ header::after{
 		.card_title{
 			font-size: 3.4rem;
 			padding-bottom: 2%;
+			font-weight: 300;
 		}
 		/* .card_title.index{
 			font-size: 1.8rem;
@@ -1256,12 +1264,14 @@ header::after{
 			font-size: 2rem;
 			padding: 30px;
 			-webkit-appearance: button;
+			font-weight: 300;
 			/* position: absolute; */
 		}
 		.button_primary{
 			font-size: 2rem;
 			padding: 30px;
 			-webkit-appearance: button;
+			font-weight: 300;
 			/* position: absolute; */
 		}
 		
@@ -1270,12 +1280,16 @@ header::after{
 			flex-wrap: wrap;
 		}
 		.summary_title{
-			font-size: 3rem;
+			font-size: 3.4rem;
 			margin-top: 40px;
+			font-weight: 300;
 		}
 		.summary_description{
 			font-size: 30px;
 			font-size: 1.8rem;
+		}
+		.section_title{
+			font-weight: 300;
 		}
 		.parallax{
 			background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
@@ -1381,13 +1395,16 @@ header::after{
 	  display: block;
 	  text-align: left;
 	  border-bottom-color: white;
-	  font-size: 2.3rem;
+	  font-size: 2.6rem;
 	}
 	.logo.responsiveLogo {
 		display: none;
 	}
 	.sideBySideItem_isLast{
 		padding-right: 2%;
+	}
+	.stay_50{
+		width: 47%;
 	}
   }
   
