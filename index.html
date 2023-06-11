@@ -53,7 +53,7 @@
 		</div>
 		<div class="fadeIn" style="visibility:hidden" id="delay3">
 			<div class="category fadeIn" >
-				<div class="category_title index">FEATURED PROJECTS</div>
+				<div class="category_title index">Me in a Nutshell</div>
 			</div>
 			<a href="#container_content"><button class="button_circle_arrow index" >
 				<i class="fas fa-arrow-down"></i>			
@@ -62,6 +62,33 @@
 		
 	</div>
 	<div class="content" id="container_content">
+		<div class="container_cards fadeIn" style="visibility:hidden; max-width:900px" id="delay4">
+			<div class="card_noLink double">
+				<img class="card_image" src="assets/nutshell-bike.png"/>
+				<div class="card_title">Just do it</div>
+				<div class="card_description">
+					Think about it this way: you can read as much as you want about "how to ride a bike", but the fastest way to learn might very well be actually just trying. This goes for my philosophy towards design and life in general: I'm a better doer than thinker, and I often make the most progress by trying, failing, and trying again. Also probably why I have too many <a href="/physical.html" class="link" target="_blank">side projects</a>... 
+				</div>
+			</div>
+			<div class="card_noLink double">
+				<img class="card_image" src="assets/nutshell-persona.png"/>
+				<div class="card_title">Be Practical</div>
+				<div class="card_description">No one has unlimited time! As much as I would love to invest in ~the whole UX process~ every time I start a new feature, it's often impractical to design a pixel perfect user persona card complete with 3 fun facts and a made-up quote. I prefer finding pragmatic, content-driven ways of organizing research and strategizing design iterations to make sure we get the most done RIGHT in the shortest amount of time.</div>
+			</div>
+			<div class="card_noLink double">
+				<img class="card_image" src="assets/nutshell-climb.png"/>
+				<div class="card_title">Happy body, happy mind</div>
+				<div class="card_description">One day I was struggling with a problem at work, and I had gotten to the point where I was not making any progress. To stop myself from spiraling into frustration, I decided to go climbing... and wouldn't you know it - halfway up a 5.12, I suddenly came up with the idea we ended up implementing. Exercise and sweeeet outdoors vitamin D makes me a happier person and a better designer. It's crazy how many ah-ha moments I have while toproping.</div>
+			</div>
+			<div class="card_noLink double">
+				<img class="card_image" src="assets/nutshell-prejoy.png" id="image"/>
+				<div class="card_title">Moments of Delight</div>
+				<div class="card_description">Obviously this comes after designing something enjoyably usable, but sprinkling in monents of delight - a fun animation, a clever easter egg - can turn a good experience into a memorable one, especially since no one is expecting it.</div>
+			</div>	
+		</div>
+		<div class="category fadeIn" >
+			<div class="category_title">FEATURED PROJECTS</div>
+		</div>
 	<div class="container_cards featured fadeIn" style="visibility:hidden" id="delay2">
 		<a href="projects/appian.html" class="card_full">
 			<div class="container_sideBySide">
@@ -153,6 +180,9 @@
 	</div>
 </body>
 <script>
+	var image = document.getElementById("image");
+	image.onmouseover = function() {  image.src = "assets/nutshell-joy.png"; }
+	image.onmouseout = function() {  image.src = "assets/nutshell-prejoy.png"; }
 	document.getElementById("year").innerHTML = new Date().getFullYear();
 	</script>
 <script type="text/javascript">
@@ -218,12 +248,15 @@
 		const fadeIn = document.getElementById('delay');
 		const fadeIn2 = document.getElementById('delay2');
 		const fadeIn3 = document.getElementById('delay3');
+		const fadeIn4 = document.getElementById('delay4');
 		setTimeout(() => {
 		fadeIn.style.visibility = 'visible';}, 10); 
 		setTimeout(() => {
 		fadeIn2.style.visibility = 'visible';}, 10); 
 		setTimeout(() => {
 		fadeIn3.style.visibility = 'visible';}, 10); 
+		setTimeout(() => {
+		fadeIn4.style.visibility = 'visible';}, 10); 
 		
 		
 		
