@@ -1328,6 +1328,7 @@ header::after{
 			/* width: 100vw; */
 			padding-left: 4%;
 			padding-right: 4%;
+			height: calc(100vh - 400px);
 		}
 		.halfwidth{
 			width: 100%;
