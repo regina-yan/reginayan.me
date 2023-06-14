@@ -113,6 +113,16 @@ strong{
   border-radius: 9px;
   /* display: grid; */
 }
+.reveal{
+	position: relative;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+.reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+}
 #container{
   perspective: 50px;
   position: relative;
@@ -572,6 +582,9 @@ h3{
 	white-space: nowrap;
 	margin-top: 2%;
 	font-size: 0.9em;
+}
+.incontent{
+	margin-bottom:2%;
 }
 .punchneedle{
 	border: 2px solid #c0abf5;
