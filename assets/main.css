@@ -14,17 +14,7 @@
 	--body-font: Source Sans Pro;
 	--display-font: handwriting;
 }
-@font-face {
-    font-family: 'strawfordregular';
-    src: url('strawford-regular-webfont.eot');
-    src: url('strawford-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('strawford-regular-webfont.woff2') format('woff2'),
-         url('strawford-regular-webfont.woff') format('woff'),
-         url('strawford-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 
-}
 @font-face {
     font-family: 'handwriting';
     src: url('Handwriting-Regular.ttf') format('truetype');
@@ -275,6 +265,12 @@ h3{
 	display: flex;
 	align-items: center;
 }
+.block {
+	display: block !important;
+}
+.flex{
+	display: flex !important;
+}
 .category{
 	text-align: center;
 	margin-bottom: 5vh;
@@ -462,6 +458,23 @@ h3{
 	padding: 10px;
 	border-radius: 6px;
 	margin: 2% 2% 0 0;
+}
+.circle_step{
+	margin-right: 2%;
+	min-width: 30px;
+}
+.header_sm{
+	font-size: 24px;
+	color: var(--button-color);
+}
+.bold{
+	font-weight: 600;
+}
+.padding_more{
+	padding: 20px !important;
+}
+.align_top{
+	align-items: flex-start;
 }
 /* Change card stacking on tablets and phones */
 @media only screen and (max-width: 1260px) {
@@ -689,6 +702,15 @@ h3{
 }
 .relative{
 	position: relative;
+}
+.margin_bottom{
+	margin-bottom: 15px;
+}
+.margin_bottom_more{
+	margin-bottom: 45px !important;
+}
+.reggie{
+	font-family: 'reggie' !important;
 }
 /* Turn off parallax scrolling for all tablets and phones */
 @media only screen and (max-device-width: 1366px) {
@@ -1010,7 +1032,15 @@ button:focus{
 .caption_description{
 	font-family: var(--body-font), sans-serif;
 	font-size: 18px;
+	word-wrap: break-word !important;
 	/* color: #747474; */
+}
+.info{
+	overflow:hidden
+}
+.item{
+	margin-bottom: 45px;
+	padding-bottom: 15px;
 }
 .caption_image{
 	height: 45px;
@@ -1217,6 +1247,9 @@ header::after{
 		a.icon{
 			font-size: 3rem;
 		}
+		.circle_step{
+			width: 10rem;
+		}
 		/* .index{
 			font-size: 2rem;
 		} */
@@ -1361,9 +1394,12 @@ header::after{
 			flex-wrap: wrap;
 		}
 		.summary_title{
-			font-size: 3.4rem;
+			font-size: 3.8rem;
 			margin-top: 40px;
 			font-weight: 300;
+		}
+		.header_sm{
+			font-size: 2.8rem;
 		}
 		.summary_description{
 			font-size: 30px;
