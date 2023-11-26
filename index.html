@@ -21,48 +21,42 @@
 </head>
 
 
-<body>
-	<div class="head" id="head">
-			<a href="index.html" class="logo" id="logo"></a>	
+<body class="dark">
+	<div class="head dark" id="head">
+			<a href="index.html" class="logo logo_white" id="logo"></a>	
 		<header class="container">
-		<div class="topnav" id="myTopnav">
-			<a href="uiux.html" class="unselected">UX</a>
-			<a href="illustration.html" class="unselected">Digital</a>
-			<a href="physical.html" class="unselected">Physical</a>
-			<a href="misc.html" class="unselected">Adventures</a>
-			<a href="about.html" class="unselected">About</a>
-			<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+		<div class="topnav dark" id="myTopnav">
+			<a href="uiux.html" class="unselected dark">UX</a>
+			<a href="illustration.html" class="unselected dark">Digital</a>
+			<a href="physical.html" class="unselected dark">Physical</a>
+			<a href="misc.html" class="unselected dark">Adventures</a>
+			<a href="about.html" class="unselected dark">About</a>
+			<a href="javascript:void(0);" class="icon dark" onclick="clickNav()"><i class="fa fa-bars"></i></a>
 		</div>
 	</header>
 	</div>
-	<div class="padding_nav"></div>
-	<div class="content">
-		<!-- <div class="header_home"></div> -->
-		<div class="parallax">
-			<div class="site_title_container ">
-				<div class="site_title" id="title">
-				</div>
+	<div class="home_container">
+		<div class="home_text">
+			<div class="h1 white">
+				Hi there, I'm Regina
 			</div>
-			<div class="category_subtitle halfwidth fadeIn" style="visibility:hidden" id="delay">
-				A designer, engineer, goofball, and lover of the outdoors with a passion for <div class="inline_tag" id="tag1"></div> and <div class="inline_tag" id="tag2">Human-Centered Design</div>
-			</br></br>
+			<div class="text white halfwidth">
+				A designer, engineer, goofball, and lover of the outdoors.
+				</br></br>
 				Currently eating chocolate, digital nomading along the West Coast, and helping folks navigate the complicated healthcare claim filing world with SuperBill.
-			</br></br>
-				<!-- This site is under construction during <p id="month" style="display:inline"></p> <p id="year" style="display:inline"></p> (devs, there are bugs! UXDs, shield your eyes!) but write-ups will be written and code will be coded soon! -->
 			</div>
 		</div>
-		<div class="fadeIn" style="visibility:hidden" id="delay3">
-			<div class="category fadeIn" >
-				<div class="category_title index">Me in a Nutshell</div>
-			</div>
-			<a href="#container_content"><button class="button_circle_arrow index" >
-				<i class="fas fa-arrow-down"></i>			
-			</button></a>
+
+		<div class="gif_container">
+			<img class="layer1" src="assets/regina-bike-gif-01.svg" />
+			<img class="layer2" src="assets/regina-bike-gif-02.svg" />
+			<img class="layer3" src="assets/regina-bike-gif-03.svg" />
+			<img class="bike_container" id="gif" src="assets/reggie-bike-01.svg" />
+
 		</div>
-		
 	</div>
-	<div class="content" id="container_content">
-		<div class="container_cards fadeIn" style="visibility:hidden; max-width:900px" id="delay4">
+	<div class="content dark" id="container_content">
+		<!-- <div class="container_cards fadeIn" style="visibility:hidden; max-width:900px" id="delay4">
 			<div class="card_noLink double">
 				<img class="card_image" src="assets/nutshell-bike.png"/>
 				<div class="card_title">Just do it</div>
@@ -85,51 +79,53 @@
 				<div class="card_title">Moments of Delight</div>
 				<div class="card_description">Obviously this comes after designing something enjoyably usable, but sprinkling in moments of delight - a fun animation, a clever easter egg - can turn a good experience into a memorable one, especially since no one is expecting it.</div>
 			</div>	
+		</div> -->
+		<div class="category " >
+			<div class="category_title dark">FEATURED PROJECTS</div>
 		</div>
-		<div class="category fadeIn" >
-			<div class="category_title">FEATURED PROJECTS</div>
-		</div>
-	<div class="container_cards featured fadeIn" style="visibility:hidden" id="delay2">
-		<a href="projects/appian.html" class="card_full">
+	<div class="container_cards featured ">
+		<a href="projects/superpay.html" class="card_full">
 			<div class="container_sideBySide">
 				<div class="sideBySideItem width_50">
-					<img class="card_image_full" src="assets/appian-2.png"/>
+					<img class="card_image_full" src="assets/superpay-cover.svg"/>
 				</div>
 				<div class="sideBySideItem width_50 relative">
-					<div class="card_title index">Appian</div>
-					<div class="card_description index">Designing features for the platform's DevOps capabilities, advocating for UX best practices on Customer Success projects, and leading a pretty cool product illustration team
+					<div class="card_title index dark ">SuperPay</div>
+					<div class="card_description index dark">Mostly Designing (but also Building, PM-ing, Marketing) an out-of-network claim-filing platform
 					</div>
 					<div class="card_tag_container_relative">
 							<div class="card_tag ux">UX/UI</div>
+							<div class="card_tag htmlcss">Javascript</div>
+							<div class="card_tag htmlcss">React</div>
 						</div>
 				</div>
 			</div>
 		</a>
-		<a href="projects/dartmouthdays.html" class="card_full">
+		<a href="projects/appian.html" class="card_full">
+			<div class="container_sideBySide">
+				<div class="sideBySideItem width_50">
+					<img class="card_image_full" src="assets/lino-cover.png"/>
+				</div>
+				<div class="sideBySideItem width_50 relative">
+					<div class="card_title index dark ">Printmaking</div>
+					<div class="card_description index dark">My most recent craft hobby
+					</div>
+					<div class="card_tag_container_relative">
+							<div class="card_tag printmaking">Printmaking</div>
+						</div>
+				</div>
+			</div>
+		</a>
+		<a href="projects/dartmouthdays.html" class="card_full dark">
 			<div class="container_sideBySide">
 				<div class="sideBySideItem width_50">
 					<img class="card_image_full" src="assets/dartmouth-cover.png"/>
 				</div>
 				<div class="sideBySideItem width_50 relative">
-					<div class="card_title index">Dartmouth Days</div>
-					<div class="card_description index">A series of illustrations that reflect on the four most formative years of my life</div>
+					<div class="card_title index dark">Dartmouth Days</div>
+					<div class="card_description index dark">A series of illustrations that reflect on the four most formative years of my life</div>
 					<div class="card_tag_container_relative">
 							<div class="card_tag illustrator">Illustrator</div>
-						</div>
-				</div>
-			</div>
-		</a>
-		<a href="projects/viva.html" class="card_full">
-			<div class="container_sideBySide">
-				<div class="sideBySideItem width_50">
-					<img class="card_image_full" src="assets/viva-basket.png"/>
-				</div>
-				<div class="sideBySideItem width_50 relative">
-					<div class="card_title index">Viva Raw</div>
-					<div class="card_description index">Packaging design and branding for a healthy, fresh raw pet food company</div>
-					<div class="card_tag_container_relative">
-							<div class="card_tag illustrator">Illustrator</div>
-					<div class="card_tag branding">Branding</div>
 						</div>
 				</div>
 			</div>
@@ -140,8 +136,8 @@
 					<img class="card_image_full" src="assets/climbingwall-cover.jpg"/>
 				</div>
 				<div class="sideBySideItem width_50 relative">
-					<div class="card_title index">Climbing Wall</div>
-					<div class="card_description index">The hardest thing I've ever done and the proudest I've ever been! My personal free-standing woody</div>
+					<div class="card_title index dark">Climbing Wall</div>
+					<div class="card_description index dark">The hardest thing I've ever done and the proudest I've ever been! My personal free-standing woody</div>
 					<div class="card_tag_container_relative">
 							<div class="card_tag painting">Painting</div>
 					<div class="card_tag wood">Wood</div>
@@ -155,8 +151,8 @@
 					<img class="card_image_full" src="assets/ecg-cover.png"/>
 				</div>
 				<div class="sideBySideItem width_50 relative">
-					<div class="card_title index">Biking the East Coast Greenway</div>
-					<div class="card_description index">What do you get when you mix a month-long vacation opportunity with a budding cyclist? A solo bikepacking trip down the East Coast!</div>
+					<div class="card_title index dark">Biking the East Coast Greenway</div>
+					<div class="card_description index dark">What do you get when you mix a month-long vacation opportunity with a budding cyclist? A solo bikepacking trip down the East Coast!</div>
 					<div class="card_tag_container_relative">
 							<div class="card_tag biking">Biking</div>
 								<div class="card_tag film">Film</div>
@@ -169,7 +165,7 @@
 </div>
 	</div>
 
-	<div class="footer">
+	<div class="footer dark">
 		<div>
 			Regina Yan © 
 			<p id="year" style="display:inline">2023</p>
@@ -202,6 +198,7 @@
 	var scrollpos = window.scrollY;
 	var header = document.getElementById("head");
 
+
 	function add_class_on_scroll() {
 		header.classList.add("borderBottom");
 	}
@@ -212,14 +209,14 @@
 
 	window.addEventListener('scroll', function(){ 
 		scrollpos = window.scrollY;
-		console.log(scrollpos);
-		if(scrollpos > 20){
+		// console.log(scrollpos);
+		if(scrollpos > 100){
 			add_class_on_scroll();
 		}
 		else {
 			remove_class_on_scroll();
 		}
-		console.log(scrollpos);
+		// console.log(scrollpos);
 	});
 </script>
 <script>
@@ -258,9 +255,15 @@
 		setTimeout(() => {
 		fadeIn4.style.visibility = 'visible';}, 10); 
 		
-		
-		
+		let images = ['assets/reggie-bike-01.svg','assets/reggie-bike-02.svg','assets/reggie-bike-03.svg','assets/reggie-bike-04.svg'];
+		let imgIndex = 0;
+		const imgElement = document.getElementById("gif");
+		function gif() {
+			imgElement.src = images[imgIndex];
+   			imgIndex === 3 ? imgIndex = 0 : imgIndex++;
+		}
 		window.onload = function () {
+    		setInterval(gif, 200);
 			typeWriter();
 			tags(text, index, textColor, "tag1");
 			tags(text2, index2, textColor2, "tag2");
