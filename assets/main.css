@@ -912,7 +912,7 @@ h3{
 .content_text{
 	font-family: var(--body-font);
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 1.2rem;
 	margin-bottom: 30px;
 }
 .content_text_no_margin{
