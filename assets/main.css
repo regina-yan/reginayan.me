@@ -1674,6 +1674,9 @@ header::after{
 	  border-bottom-color: white;
 	  font-size: 2.6rem;
 	}
+	.topnav.responsive .dark {
+		border-bottom-color: #1A1C1D !important;
+	}
 	.logo.responsiveLogo {
 		display: none;
 	}
