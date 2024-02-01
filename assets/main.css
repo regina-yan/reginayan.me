@@ -98,17 +98,26 @@ strong{
 	margin: 0 0 50px 0;
 	/* height: 1000px;  */
 	width: 100%;
+	max-width: 800px;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	padding-top: 100px;
 	padding-bottom: 20px;
+	position: relative;
 }
 .home_text{
-	width: 80%;
-	max-width: 1000px;
+	width: 50%;
+	max-width: 800px;
 	margin: auto;
 	margin-bottom: 20px;
-	padding-top: 20px;
+	padding: 20px;
+	position: absolute;
+	border-radius: 10px;
+	top: 100px;
+	z-index: 1000;
+	left: 30px;
+	background-color: #1a1c1d99;
+
 }
 .h1{
 	font-size: 4rem;
@@ -131,8 +140,8 @@ strong{
 	color: white !important;
 }
 .gif_container{
-	height: 800px;
-	width: 1000px;
+	height: 600px;
+	width: 800px;
 	background-color: #1A1C1D;
 	position: relative;
 	margin: auto;
@@ -144,7 +153,7 @@ strong{
   .bike_container{
 	position: absolute;
 	left: 25vw;
-	width: 300px;
+	width: 230px;
 	bottom: 0;
   }
   .layer1{
