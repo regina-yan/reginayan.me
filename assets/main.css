@@ -679,6 +679,8 @@ h3{
     font-size: 0.9em;
     font-family: var(--body-font), sans-serif;
     min-width: 400px;
+	border: 1px solid #dddddd;
+	border-radius: 7px;
     /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
 }
 .single-table thead tr {
