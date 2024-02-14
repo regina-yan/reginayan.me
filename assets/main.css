@@ -1369,6 +1369,13 @@ header::after{
 		.home_container{
 			margin-top: 80px;
 		}
+		.home_text{
+			width: 100%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			position: static;
+		
+		}
 		.text{
 			font-size: 2rem;
 		}
