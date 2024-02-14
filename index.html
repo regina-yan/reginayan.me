@@ -233,6 +233,18 @@
 	let year = y.getFullYear();
 	document.getElementById("year").innerHTML = year;
 </script>
+<script>
+	let images = ['assets/reggie-bike-01.svg','assets/reggie-bike-02.svg','assets/reggie-bike-03.svg','assets/reggie-bike-04.svg'];
+		let imgIndex = 0;
+		const imgElement = document.getElementById("gif");
+		function gif() {
+			imgElement.src = images[imgIndex];
+   			imgIndex === 3 ? imgIndex = 0 : imgIndex++;
+		}
+		window.onload = function () {
+    		setInterval(gif, 200);
+		};
+</script>
 <!-- <script>
 		var i = 0;
 		var txt = "Hi there, I'm Regina!";
