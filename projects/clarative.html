@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | Clarative</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JBLS4C2NB"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());	
+		gtag('config', 'G-0JBLS4C2NB');
+		</script>
+</head>
+<body>
+	<div class="head" id="head">
+			<a href="../index.html" class="logo" id="logo"></a>
+		<header class="container">
+			<div class="topnav" id="myTopnav">
+				<a href="../uiux.html" class="active">UX</a>
+				<a href="../illustration.html" class="unselected">Digital</a>
+				<a href="../physical.html" class="unselected">Physical</a>
+				<a href="../misc.html" class="unselected">Adventures</a>
+				<a href="../about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+	</div>
+<div style="padding-top: 150px;"></div>
+
+<div class="content">
+	<div class="container_summary">
+		<div class="section_summary">
+			<div class="caption_container">
+				<img class="summary_image" src="../assets/clarative-cover.png"/>
+			</div>
+		</div>
+		<div class="section_summary_text">
+			<div class="summary_title">Clarative</div>
+			<br/>
+			<div class="summary_description"> 
+                Clarative is a self-documenting AI data and analytics tool - you can ask your data questions just like you'd ask a person, in plain English! I'm helping out the cofounders with the design and marketing for the application.
+                
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+			</div>
+    </div>
+    <div id="container_content" style="padding-top: 150px;"></div>
+	<div class="container_content_stack vertical">
+        <div class="card_title">My role</div>
+        <div class="container_callout content_text block">
+            I was essentially the <strong>founding designer</strong> by helping out part-time at Clarative. I handled the design of the application and marketing pages, and worked with the founders on user research and product direction.
+            <br/><br/>
+            <strong>Note: I cannot share product work due to NDA, so this page will feature my marketing work.</strong>
+
+        </div>
+        </br>
+        </br></br>
+        <div class="card_title">Marketing Site and Assets</div>
+        <div class="content_text">
+            I designed and built everything on the marketing site, which was a fun experiment in CSS animations and Webflow. 
+            
+            <a href="https://www.clarative.ai" target="_blank" class="button_secondary">Check out the website <i class="fas fa-external-link-square-alt"></i></a>
+
+            <br/><br/>
+            <img class="summary_image " src="../assets/clarative-img1.png"/>
+            <img class="summary_image " src="../assets/clarative-img2.png"/>
+            <img class="summary_image outline" src="../assets/clarative-img3.png"/>
+            <img class="summary_image outline" src="../assets/clarative-img4.png"/>
+            <img class="summary_image " src="../assets/clarative-cards.gif"/>
+
+        </div>
+        <br/><br/>
+        </br>
+        <div class="border"></div>
+		<div class="container_sideBySide"> 
+			<div class="sideBySideItem width_50 fixed">
+				<a href="superpay.html" class="navigation">
+					<div class="content_text_no_margin"><i class="fas fa-arrow-left"></i>&nbsp Previous Project</i></div>
+				</a>
+				<div class="content_text_no_margin">SuperBill: SuperPay</div>
+			</div>
+			<div class="sideBySideItem_isLast width_50 align_right fixed">
+				<a href="appian.html" class="navigation">
+					<div class="content_text_no_margin">Next Project &nbsp <i class="fas fa-arrow-right"></i></div>
+				</a>
+				<div class="content_text_no_margin">Appian</div>
+			</div>
+		</div>
+        </div>
+
+
+    </div>
+</div>
+<div class="footer">
+	<div>
+		Regina Yan © 
+		<p id="year" style="display:inline">2023</p>
+	</div>
+	<div>
+		<i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+	</div>
+</div>
+</body>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+	
+			// Store hash
+			var hash = this.hash;
+	
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+		});
+	});
+</script>
+<script type="text/javascript">
+	function clickNav() {
+		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+			logo.style.display = "none";
+		} else {
+			x.className = "topnav";
+			logo.style.display = "block";
+		}
+	}
+	window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+<script>
+	var scrollpos = window.scrollY;
+	var header = document.getElementById("head");
+
+	function add_class_on_scroll() {
+		header.classList.add("borderBottom");
+	}
+
+	function remove_class_on_scroll() {
+		header.classList.remove("borderBottom");
+	}
+
+	window.addEventListener('scroll', function(){ 
+		scrollpos = window.scrollY;
+		console.log(scrollpos);
+		if(scrollpos > 20){
+			add_class_on_scroll();
+		}
+		else {
+			remove_class_on_scroll();
+		}
+		console.log(scrollpos);
+	});
+</script>
+
+</html>
