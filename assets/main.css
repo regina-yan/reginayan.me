@@ -122,6 +122,14 @@ strong{
 .h1{
 	font-size: 4rem;
 }
+.fake_link{
+	color: var(--highlight-color);
+	position: absolute;
+	bottom: 10px;
+}
+.fake_link:hover{
+	color: var(--highlight-darken);
+}
 .white{
 	color: white;
 }
@@ -493,6 +501,9 @@ header{
 	position: relative;
 	top: 0px;
 }
+.short{
+	max-height: 250px !important;
+}
 .card_noLink{
 	border:1px solid #e0e0e0;
 	border-radius: 9px;
@@ -629,6 +640,15 @@ header{
 	object-position: top;
 	border-radius: 7px;
 	margin: 0 0 15px 0;
+}
+.card_image_width{
+	width: 100%;
+	max-height: 100px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.card_image.short{
+	height: 100px;
 }
 .tiny {
 	max-width: 200px;
