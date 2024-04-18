@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regina | SuperDial | Script Builder</title>
+	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/be865165bc.js" crossorigin="anonymous"></script>
+	<link runat="server" rel="icon" type="image/png" href="../assets/favicon-01.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JBLS4C2NB"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());	
+		gtag('config', 'G-0JBLS4C2NB');
+		</script>
+</head>
+<body>
+	<div class="head" id="head">
+			<a href="../index.html" class="logo" id="logo"></a>
+		<header class="container">
+			<div class="topnav" id="myTopnav">
+				<a href="../uiux.html" class="active">UX & Dev</a>
+				<a href="../illustration.html" class="unselected">Digital</a>
+				<a href="../physical.html" class="unselected">Physical</a>
+				<a href="../misc.html" class="unselected">Adventures</a>
+				<a href="../about.html" class="unselected">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="clickNav()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header>
+	</div>
+<div style="padding-top: 150px;"></div>
+
+<div class="content">
+	<div class="container_summary">
+		<div class="section_summary">
+			<div class="caption_container">
+				<img class="summary_image outline" src="../assets/superdial-script.svg"/>
+			</div>
+		</div>
+		<div class="section_summary_text">
+			<div class="summary_title">SuperDial Case Study: Designing a Conversation</div>
+			<br/>
+            <br/>
+			<div class="summary_description"> 
+                In order to place automated calls, customers must tell us what questions they want us to ask. Read about how we designed a Script Builder that transformed human conversations into a concrete formula.
+                
+			</div>
+			<a href="#container_content"><button class="button_circle_arrow" >
+				<i class="fas fa-arrow-down"></i>			
+			</button></a>
+			</div>
+    </div>
+    <div id="container_content" style="padding-top: 150px;"></div>
+	<div class="container_content_stack vertical">
+        <div class="card_title">Problem</div>
+        <div class="container_callout content_text block">
+            Devise a "formula" for customers to describe the answers they need from the automated calls, and make this solution work for a wide range of call complexities. The solution must also be easily understood by our AI "brain".
+        </div>
+        </br>
+        </br></br>
+        <div class="card_title">User Research</div>
+        <div class="content_text">
+            <img class="summary_image" src="../assets/superdial-urimages.png"/>
+            Customers came to us with the full gambit of ways in which they standardized their calls. Provider offices might have a literal script, prescribing exactly what the receptionist should say down to the call introduction. Larger healthcare Revenue Cycle Management (RCM) companies, on the other hand, came to us with  their own form-filling system, and yet others just entered relevant information into a Practice Management Software without utilizing a "script". 
+
+        </div>
+        <div class="card_title">Requirements</div>
+        <div class="content_text">
+            After understanding the variety of existing paradigms, I came up with requirements. We needed to design a <strong>Script Builder</strong> that would be straightfoward and easy-to-use (Ops teams made it clear they don't have the time or technical background to deal with a complicated onboarding process), and the core design needed to be flexible enough for us to evolve as we acquired more use cases. 
+
+        </div>
+        <div class="card_title">Frameworks considered</div>
+        <div class="content_text">
+            I considered a variety of directions for our script builder, and they mostly boiled down to three categories:
+            <br/><br/>
+            <strong>Decision Model</strong><br/><br/>
+            <img class="summary_image" src="../assets/superdial_op1.png"/>
+            I first considered a "node model" design that could handle extremely complex scripts. Users could define questions, utilize condition operators... they could customize a script to exactly suit their needs. I quickly realized that 1. this design would seem too daunting for a non-technical user to take on, and we'd probably end up being the ones creating their scripts for them;  2. our customers don't really care about how we're getting to the answers on this detailed of a level; and 3. This decision tree would be too rigid for our AI to flexibily make decisions if something didn't exactly follow the flow. <strong>This option would be over-designing</strong> 
+            <br/><br/>
+            <strong>Answer Checklist</strong><br/><br/>
+            <img class="summary_image" src="../assets/superdial_op2.png"/>
+            <br/>
+            I then looked at a completely opposite approach. Instead of defining questions, just tell us what answers you're looking for by checking all the responses you want. We'd write the corresponding questions internally and let AI figure out when to ask them, and this would allow us to "standardize" questions more which could help AI accuracy (anytime someone wants to know their out-of-pocket max, we can ask it the same way). However, while this approach simplified things for our back-end team and supposedly simplified things for our customers, they wanted more flexibility and control over the process. <strong>This option was too inflexible.</strong>
+            <br/><br/>
+            <strong>Form Builder</strong><br/><br/>
+            <img class="summary_image" src="../assets/superdial_op3.png"/>
+            <br/>
+            So, we arrived at a Goldilocks solution where I took the positives of the two former approaches and designed a google form-esque Script Builder that had the flexibility of defining what questions to ask and when to ask them, but with a simplicity that doesn't feel daunting. 
+        </div>
+        <div class="card_title">Final Thoughts & Implementation</div>
+        <div class="content_text">
+            We implemented v1 of our Script Builder in Fall 2023 and have continued iterating since. The Script Builder evolves as we gain greater clarity on use cases - for example, we've found that many customers want similar scripts, so we've created sample "base" scripts that get you 70% of the way there. Our core design didn't box us into a corner, which has allowed us to easily adapt to changes. The Script Builder isn't some ground-breaking feature, but it manages to suit the complex needs of our customers while being easy to understand, and I'm quite happy with that. 
+            <br/>
+        </div>
+        </br>
+        <div class="border"></div>
+                <div class="container_sideBySide"> 
+                    <div class="sideBySideItem width_50 fixed">
+                        <a href="superdial.html" class="navigation">
+                            <div class="content_text_no_margin"><i class="fas fa-arrow-left"></i>&nbsp Back to SuperDial</i></div>
+                        </a>
+                    </div>
+                        <div class="sideBySideItem width_50 fixed">
+                        </div>
+                    </div>
+        </div>
+
+
+    </div>
+</div>
+<div class="footer">
+	<div>
+		Regina Yan © 
+		<p id="year" style="display:inline">2023</p>
+	</div>
+	<div>
+		<i class="far fa-paper-plane"></i> Get in Touch! Contact me at reginayan96@gmail.com
+	</div>
+</div>
+</body>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+	
+			// Store hash
+			var hash = this.hash;
+	
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+			});
+		} // End if
+		});
+	});
+</script>
+<script type="text/javascript">
+	function clickNav() {
+		var x = document.getElementById("myTopnav");
+		var logo = document.getElementById("logo");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+			logo.style.display = "none";
+		} else {
+			x.className = "topnav";
+			logo.style.display = "block";
+		}
+	}
+	window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+<script>
+	var scrollpos = window.scrollY;
+	var header = document.getElementById("head");
+
+	function add_class_on_scroll() {
+		header.classList.add("borderBottom");
+	}
+
+	function remove_class_on_scroll() {
+		header.classList.remove("borderBottom");
+	}
+
+	window.addEventListener('scroll', function(){ 
+		scrollpos = window.scrollY;
+		console.log(scrollpos);
+		if(scrollpos > 20){
+			add_class_on_scroll();
+		}
+		else {
+			remove_class_on_scroll();
+		}
+		console.log(scrollpos);
+	});
+</script>
+
+</html>

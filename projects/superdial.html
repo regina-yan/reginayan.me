@@ -43,6 +43,10 @@
 		<div class="section_summary_text">
 			<div class="summary_title">SuperDial</div>
 			<br/>
+            <div class="container_callout content_text block">
+                Founding product designer for an AI outbound health care phone caller
+            </div>
+            <br/>
 			<div class="summary_description"> 
                 Out of the ashes of SuperPay rose SuperDial, the next big pivot for SuperBill. While filing out-of-network claims for patients in SuperPay, we needed to call a patient’s insurance company to verify their benefits. This took over 30 minutes per call (working through the insurance company’s automated IVR system, waiting on hold, etc.), and we desperately needed to streamline this process to remain profitable. 
                 <br/> <br/> With recent developments in AI, we made our own “robodialer” that would call insurance companies on our behalf. This worked quite marvelously for us, and we quickly realized that practices, billers and RCM companies alike all needed the same thing, just different “scripts”. Thus began the SuperDial journey.
@@ -57,12 +61,101 @@
 	<div class="container_content_stack vertical">
         <div class="card_title">My role</div>
         <div class="container_callout content_text block">
-            I was the <strong>sole designer</strong> at this 8-person company and designed every feature in the app / page on the marketing site. I also did a good deal of <strong>full-stack development</strong>, from implementing 2-factor authentication to handling most of the front-end UI work. I lightly <strong>PM-ed</strong> the portal features by developing product roadmaps, and performed the bulk of <strong>QA</strong> testing before we deployed to customers. Typical startup role!
+            I was the <strong>sole designer</strong> at this 8-person company and designed every feature in the web apps and marketing site. I also did a good deal of <strong>full-stack development</strong>, from implementing self-serve API configurations to handling front-end UI work. I lightly <strong>PM-ed</strong> the portal features by developing product roadmaps, and performed the bulk of <strong>QA</strong> testing before we deployed to customers. Typical startup role!
 
         </div>
         </br>
         </br></br>
-        <div class="card_title">Script Builder</div>
+        <div class="card_title">Platform Overview</div>
+        <div class="content_text">
+            <strong>Customer Portal</strong>: Customers can define scripts, place calls, view results, and perform sandbox developer tasks. <br/>
+            <strong>Internal Audit Platform</strong>: An internal tool for us to review AI call performance. <br/>
+            <strong>Internal Call Center</strong>: An internal tool to manually place calls ourselves if the AI failed. 
+
+            <!-- Customers can configure custom “scripts”, which tell us what questions they’d like us to ask. V1 was a simple google form-esque builder. After user feedback, our script builder evolved to allow <strong>question nesting</strong> (“if the answer is X, ask this. If Y, ask this instead”), <strong>references to inputs</strong> (similar to code snippets → if I want to reference the patient’s name, I can say {patientName}), and a <strong>support tab.</strong>
+
+            <br/><br/>
+            <strong>Challenges: </strong>Not designing ourselves into a box - there are so many ways you can “tell us what answers you want”. We didn’t want to create something too complicated and make script creation a thing we’d have to explain to users. But script creation also needed to be flexible enough to win over companies with very thorough requirements. 
+            <br/><br/>
+            <img class="summary_image outline" src="../assets/superdial-script.svg"/> -->
+
+        </div>
+        <div class="card_title">Design Case Studies</div>
+        <div class="content_text">
+            <div class="container_cards">
+                <a href="../projects/superdial-script-builder.html" class="card short">
+                    <img class="card_image short outline" src="../assets/superdial-script.svg"/>
+                    <strong>Designing a Conversation</strong>
+                    <div class="card_description">The process behind SuperDial's "Script Builder" that facilitates the AI conversation
+                    </div>
+                    <div class="fake_link">Read more <i class="fa-solid fa-arrow-right-long"></i></div>
+                </a>
+                <div class="card_category short">
+                    <img class="card_image short outline" src="../assets/superdial-results.svg"/>
+                    <strong>2 Users, 1 Platform</strong>
+                    <div class="card_description">Elegantly accomodating 2 different personas in one platform</div>
+                    <div class="no_link">Coming Soon </div>
+                </div>
+                <div class="card_category short">
+                    <img class="card_image short outline" src="../assets/superdial-callcenter.png"/>
+                    <strong>Call Center, Reimagined</strong>
+                    <div class="card_description">The process behind SuperDial's "Script Builder" that facilitates the AI conversation</div>
+                    <div class="no_link">Coming Soon </div>
+                <!-- <a href="projects/foca17.html" class="card short">
+                    <img class="card_image short" src="assets/lakemorey.png"/>
+                    <div class="card_title">Inelegant? Maybe. User-friendly? Yes!</div>
+                    <div class="card_description">The process behind SuperDial's "Script Builder" that facilitates the AI conversation</div>
+                </a> -->
+            </div>
+            </div>
+        </div>
+        <div class="card_title">Development Work Overview</div>
+        <div class="content_text">
+            I won’t deep-dive into my development work, but here are examples of features I built:
+            <br/><br/>
+            <div class="container_sideBySide"> 
+                <div class="sideBySideItem width_50">
+                    <div class="container_callout content_text block">
+                        <img class="card_image_width" src="../assets/superdial-style.svg"/>
+                        <strong>Translating design to production</strong>
+                        <div class="card_category_description">
+                            My first step into development was owning the front-end work, which involved writing javascript, employing Tailwind CSS framework for the UI, and building reusable React components
+						</div>
+                    </div>
+                </div>
+                <div class="sideBySideItem width_50">
+                    <div class="container_callout content_text block">
+                        <img class="card_image_width" src="../assets/superdial-2fa.png"/>
+                        <strong>2-Factor Authentication</strong>
+                        <div class="card_category_description">
+                            I built 2FA which involved Firebase Auth + Identity Platform management, tracking tokens, and signing users out after 1 hour or 30 days depending on preferences
+						</div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="container_sideBySide"> 
+                <div class="sideBySideItem width_50">
+                    <div class="container_callout content_text block">
+                        <img class="card_image_width" src="../assets/superdial-pdf.png"/>
+                        <strong>PDF generation</strong>
+                        <div class="card_category_description">
+                            We return call results in a CSV format, but I helped convert the CSV to PDFs using Beautiful Soup (Python HTML parser), and I implemented the ability to customize PDFs with customer logos
+						</div>
+                    </div>
+                </div>
+                <div class="sideBySideItem width_50">
+                    <div class="container_callout content_text block">
+                        <img class="card_image_width" src="../assets/superdial-api.png"/>
+                        <strong>Self-serve API configuration</strong>
+                        <div class="card_category_description">
+                            I built an API configuration page to allow customers to generate their own sandbox and prod API keys + secrets, which involved front-end React components and back-end python code to generate keys/secrets to store in the database
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card_title">Script Builder</div>
         <div class="content_text">
             Customers can configure custom “scripts”, which tell us what questions they’d like us to ask. V1 was a simple google form-esque builder. After user feedback, our script builder evolved to allow <strong>question nesting</strong> (“if the answer is X, ask this. If Y, ask this instead”), <strong>references to inputs</strong> (similar to code snippets → if I want to reference the patient’s name, I can say {patientName}), and a <strong>support tab.</strong>
 
@@ -71,44 +164,44 @@
             <br/><br/>
             <img class="summary_image outline" src="../assets/superdial-script.svg"/>
 
-        </div>
-        <br/><br/>
-            <div class="card_title">Placing Calls</div>
+        </div> -->
+        <!-- <br/><br/> -->
+            <!-- <div class="card_title">Placing Calls</div>
             <div class="content_text">
             We started out saying, “to place calls, upload a CSV with required inputs” (inputs being stuff like patient name, date of birth, etc. – all the info we’d need to get the right answers). We soon found that we’d need to allow quite a few different ways for users to place calls based on various use cases: CSV upload, manually enter on our portal, API, practice management software (PMS) integration. 
             <br/><br/>
             <strong>Challenges: </strong>Creating a good user experience for all ways of placing calls without overwhelming the dev team with complexity (more ways to place calls = more things to maintain = more potential bugs).
             <br/><br/>
             <img class="summary_image" src="../assets/superdial-place.svg"/>
-            </div>
-        </br></br></br>
-            <div class="card_title">Viewing Results</div>
+            </div> -->
+        <!-- </br></br></br> -->
+            <!-- <div class="card_title">Viewing Results</div>
             <div class="content_text">
             After our AI completes a batch of calls, we display the results in a table and let users download a CSV file of the successful and/or failed calls. Of course, as needs developed, the results page became more and more robust - a full-out detailed results view for practices who’ve linked their PMS, rolled up stats, etc. 
             <br/><br/>
             <img class="summary_image outline" src="../assets/superdial-results.svg"/>
             <img class="summary_image outline" src="../assets/superdial-detail.svg"/>
-            </div>
-            </br></br>
-            <div class="card_title">Settings / Dev page</div>
+            </div> -->
+            <!-- </br></br> -->
+            <!-- <div class="card_title">Settings / Dev page</div>
             <div class="content_text">
                 A catch-all page to hold all the settings and developer tools. Manage your team accounts, test out the API, and view your call settings.  
 
                 <br/><br/>
                 <img class="summary_image" src="../assets/superdial-dev.svg"/>
-            </div>
-        </br></br>
-        <div class="card_title">Marketing page</div>
+            </div> -->
+        <!-- </br></br> -->
+        <!-- <div class="card_title">Marketing page</div>
         <div class="content_text">
-            I’m quite happy with our marketing page - I designed and built the site in Webflow, and wanted it to look techy and trustworthy (and not too "trendy"). SuperBill should feel legit and professional, and not like a startup of 8 people haha. I chose a style that had the color pop + animations of tech startups, but read a little more straightforward / corporate. 
+            I’m quite happy with our marketing page - I designed and built the site in Webflow, and wanted it to look techy and trustworthy (and not too "trendy"). SuperBill should feel legit and professional, and not like a startup of 8 people. I chose a style that had the color pop + animations of tech startups, but read a little more straightforward / corporate. 
             <br/>
             <a href="https://www.thesuperbill.com" target="_blank" class="button_secondary">Check out the website <i class="fas fa-external-link-square-alt"></i></a>
             <br/><br/>
             <img class="summary_image" src="../assets/superdial-website.gif"/>
-        </div>
+        </div> -->
 
-         </br></br>
-        <div class="card_title">Lessons learned</div>
+         <!-- </br></br> -->
+        <!-- <div class="card_title">Lessons learned</div>
         <div class="content_text">
             <br/>
         <strong>Building a single platform for multiple use cases</strong>
@@ -129,7 +222,7 @@
         <br/>
         My previous company had a very defined style guide, so developing an implementable style from scratch was new for me! I had a lot of fun coming up with our design style, and then created reusable components using TailwindCSS to make implementation even faster.
         <br/><br/><img class="summary_image outline" src="../assets/superdial-style.svg"/>
-        </div>
+        </div> -->
         </br>
         <div class="border"></div>
                 <div class="container_sideBySide"> 
