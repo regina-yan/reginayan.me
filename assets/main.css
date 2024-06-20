@@ -1033,6 +1033,9 @@ header{
 	background-color: var(--card-hover);
 	padding: 2%
 }
+.bg_red{
+	background-color: #ff8181 !important;
+}
 .block{
 	display: block !important;
 }
